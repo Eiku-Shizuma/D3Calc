@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainBar));
             this.mainBarFileLabel = new System.Windows.Forms.Label();
             this.mainBarEditLabel = new System.Windows.Forms.Label();
             this.mainBarHelpLabel = new System.Windows.Forms.Label();
@@ -43,7 +42,7 @@
             this.mainBarFileLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mainBarFileLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainBarFileLabel.ForeColor = System.Drawing.Color.White;
-            this.mainBarFileLabel.Location = new System.Drawing.Point(15, 5);
+            this.mainBarFileLabel.Location = new System.Drawing.Point(15, 6);
             this.mainBarFileLabel.Name = "mainBarFileLabel";
             this.mainBarFileLabel.Size = new System.Drawing.Size(29, 19);
             this.mainBarFileLabel.TabIndex = 0;
@@ -93,14 +92,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.mainBarCreditsLabel);
             this.Controls.Add(this.mainBarHelpLabel);
             this.Controls.Add(this.mainBarEditLabel);
             this.Controls.Add(this.mainBarFileLabel);
             this.Name = "MainBar";
-            this.Size = new System.Drawing.Size(1006, 28);
+            this.Size = new System.Drawing.Size(1008, 30);
             this.ResumeLayout(false);
             this.PerformLayout();
 
