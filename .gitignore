@@ -1,0 +1,7 @@
+desktop.ini
+.git
+*/obj
+*/bin
+*.db
+*.suo
+*.sln
