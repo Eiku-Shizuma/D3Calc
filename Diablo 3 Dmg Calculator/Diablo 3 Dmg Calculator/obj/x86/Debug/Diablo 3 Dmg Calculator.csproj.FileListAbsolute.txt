@@ -11,3 +11,4 @@ C:\Users\Mexx\gmpr\Diablo 3 Dmg Calc\Diablo 3 Dmg Calculator\Diablo 3 Dmg Calcul
 C:\Users\Mexx\gmpr\Diablo 3 Dmg Calc\Diablo 3 Dmg Calculator\Diablo 3 Dmg Calculator\obj\x86\Debug\Diablo_3_Dmg_Calculator.Inventory.resources
 C:\Users\Mexx\gmpr\Diablo 3 Dmg Calc\Diablo 3 Dmg Calculator\Diablo 3 Dmg Calculator\obj\x86\Debug\Diablo_3_Dmg_Calculator.Skills.resources
 C:\Users\Mexx\gmpr\Diablo 3 Dmg Calc\Diablo 3 Dmg Calculator\Diablo 3 Dmg Calculator\obj\x86\Debug\Diablo_3_Dmg_Calculator.Statistics.resources
+C:\Users\Mexx\gmpr\Diablo 3 Dmg Calc\Diablo 3 Dmg Calculator\Diablo 3 Dmg Calculator\obj\x86\Debug\Diablo_3_Dmg_Calculator.controls.UserControl1.resources
