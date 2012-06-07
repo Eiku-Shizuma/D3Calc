@@ -120,5 +120,109 @@ namespace Diablo_3_Dmg_Calculator.Models
             get { return _skill3; }
             set { if (value >= 0) { _skill3 = value; } }
         }
+
+        private itemmodel _helm;
+
+        public itemmodel Helm
+        {
+            get { return _helm; }
+            set { _helm = value; }
+        }
+
+        private itemmodel _shoulder;
+
+        public itemmodel Shoulder
+        {
+            get { return _shoulder; }
+            set { _shoulder = value; }
+        }
+
+        private itemmodel _amulet;
+
+        public itemmodel Amulet
+        {
+            get { return _amulet; }
+            set { _amulet = value; }
+        }
+
+        private itemmodel _gloves;
+
+        public itemmodel Gloves
+        {
+            get { return _gloves; }
+            set { _gloves = value; }
+        }
+
+        private itemmodel _bracer;
+
+        public itemmodel Bracer
+        {
+            get { return _bracer; }
+            set { _bracer = value; }
+        }
+
+        private itemmodel _waist;
+
+        public itemmodel Waist
+        {
+            get { return _waist; }
+            set { _waist = value; }
+        }
+
+        private itemmodel _chest;
+
+        public itemmodel Chest
+        {
+            get { return _chest; }
+            set { _chest = value; }
+        }
+
+        private itemmodel _pants;
+
+        public itemmodel Pants
+        {
+            get { return _pants; }
+            set { _pants = value; }
+        }
+
+        private itemmodel _ring1;
+
+        public itemmodel Ring1
+        {
+            get { return _ring1; }
+            set { _ring1 = value; }
+        }
+
+        private itemmodel _ring2;
+
+        public itemmodel Ring2
+        {
+            get { return _ring2; }
+            set { _ring2 = value; }
+        }
+
+        private itemmodel _boots;
+
+        public itemmodel Boots
+        {
+            get { return _boots; }
+            set { _boots = value; }
+        }
+
+        private itemmodel _mainhand;
+
+        public itemmodel Mainhand
+        {
+            get { return _mainhand; }
+            set { _mainhand = value; }
+        }
+
+        private itemmodel _offhand;
+
+        public itemmodel Offhand
+        {
+            get { return _offhand; }
+            set { _offhand = value; }
+        }
     }
 }
