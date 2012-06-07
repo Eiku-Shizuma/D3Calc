@@ -52,7 +52,6 @@ namespace Diablo_3_Dmg_Calculator.Models
         }
 
         private int str;
-        private int lvl;
         /// <summary>
         /// Gets or sets the character Strengh
         /// </summary>
@@ -63,7 +62,6 @@ namespace Diablo_3_Dmg_Calculator.Models
         }
 
         private int dex;
-        private int lvl;
         /// <summary>
         /// Gets or sets the character dexterity
         /// </summary>
@@ -74,7 +72,6 @@ namespace Diablo_3_Dmg_Calculator.Models
         }
 
         private int inte;
-        private int lvl;
         /// <summary>
         /// Gets or sets the character Intelligence
         /// </summary>
@@ -85,7 +82,6 @@ namespace Diablo_3_Dmg_Calculator.Models
         }
 
         private int vit;
-        private int lvl;
         /// <summary>
         /// Gets or sets the character Vitality
         /// </summary>
