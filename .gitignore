@@ -1,7 +1,7 @@
 desktop.ini
 .git
-*/obj
-*/bin
+/Diablo 3 Dmg Calculator/Diablo 3 Dmg Calculator/obj
+/Diablo 3 Dmg Calculator/Diablo 3 Dmg Calculator/bin
 *.db
 *.suo
 *.sln
