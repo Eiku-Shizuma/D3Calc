@@ -60,6 +60,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.invHeadPanelCM = new Diablo_3_Dmg_Calculator.controls.ContextMenu();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -461,11 +462,21 @@
             this.label11.TabIndex = 31;
             this.label11.Text = "label11";
             // 
+            // invHeadPanelCM
+            // 
+            this.invHeadPanelCM.BackColor = System.Drawing.Color.Black;
+            this.invHeadPanelCM.Location = new System.Drawing.Point(356, 69);
+            this.invHeadPanelCM.Name = "invHeadPanelCM";
+            this.invHeadPanelCM.Size = new System.Drawing.Size(286, 131);
+            this.invHeadPanelCM.TabIndex = 0;
+            this.invHeadPanelCM.Visible = false;
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.invHeadPanelCM);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -539,5 +550,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private controls.ContextMenu invHeadPanelCM;
     }
 }

@@ -52,6 +52,12 @@
     <Compile Include="controls\Chars\Monk Female.Designer.cs">
       <DependentUpon>Monk Female.cs</DependentUpon>
     </Compile>
+    <Compile Include="controls\ContextMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controls\ContextMenu.Designer.cs">
+      <DependentUpon>ContextMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,9 @@
     <Compile Include="controls\Statistics.Designer.cs">
       <DependentUpon>Statistics.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="controls\ContextMenu.resx">
+      <DependentUpon>ContextMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="controls\Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
     </EmbeddedResource>

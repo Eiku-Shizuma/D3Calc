@@ -18,8 +18,13 @@ namespace Diablo_3_Dmg_Calculator
             InitializeComponent();
         }
 
+        private void ShowContextMenue(object sender) 
+        {
+            Panel panel = (Panel)sender;
 
 
-
+            
+        
+        }
     }
 }
