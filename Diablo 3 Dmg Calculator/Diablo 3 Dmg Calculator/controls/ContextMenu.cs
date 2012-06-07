@@ -6,20 +6,14 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using Diablo_3_Dmg_Calculator.Operations;
 
-
-namespace Diablo_3_Dmg_Calculator
+namespace Diablo_3_Dmg_Calculator.controls
 {
-    public partial class Inventory : UserControl
+    public partial class ContextMenu : UserControl
     {
-        public Inventory()
+        public ContextMenu()
         {
             InitializeComponent();
         }
-
-
-
-
     }
 }

@@ -19,7 +19,13 @@ namespace Diablo_3_Dmg_Calculator.Models
     /// </summary>
     public class itemmodel
     {
-        private bool indestructible;
+        private bool _indestructible;
+
+        public bool Indestructible
+        {
+            get { return _indestructible; }
+            set { _indestructible = value; }
+        }
 
         ///
         ///4 of each because of the possibility to socket gems into items. Max is 3 sockets on any item.
