@@ -70,7 +70,8 @@
     <Compile Include="controls\MainBar.Designer.cs">
       <DependentUpon>MainBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\itemmodel.cs" />
+    <Compile Include="Models\Charaktermodel.cs" />
     <Compile Include="Operations\Calculations.cs" />
     <Compile Include="Operations\Save.cs" />
     <Compile Include="Program.cs" />
