@@ -27,7 +27,6 @@ namespace Diablo_3_Dmg_Calculator.Models
         }
 
         private int character;
-
         /// <summary>
         /// Gets or sets the character value
         /// Barbarian = 1
@@ -43,7 +42,6 @@ namespace Diablo_3_Dmg_Calculator.Models
         }
 
         private int lvl;
-
         /// <summary>
         /// Gets or sets the character Level
         /// </summary>
@@ -53,15 +51,58 @@ namespace Diablo_3_Dmg_Calculator.Models
             set { if (value >= 0) { lvl = value; } }
         }
 
-        private int skill1;
+        private int str;
+        private int lvl;
+        /// <summary>
+        /// Gets or sets the character Strengh
+        /// </summary>
+        public int Str
+        {
+            get { return str; }
+            set { if (value >= 0) { str = value; } }
+        }
 
+        private int dex;
+        private int lvl;
+        /// <summary>
+        /// Gets or sets the character dexterity
+        /// </summary>
+        public int Dex
+        {
+            get { return dex; }
+            set { if (value >= 0) { dex = value; } }
+        }
+
+        private int inte;
+        private int lvl;
+        /// <summary>
+        /// Gets or sets the character Intelligence
+        /// </summary>
+        public int Inte
+        {
+            get { return inte; }
+            set { if (value >= 0) { inte = value; } }
+        }
+
+        private int vit;
+        private int lvl;
+        /// <summary>
+        /// Gets or sets the character Vitality
+        /// </summary>
+        public int Vit
+        {
+            get { return vit; }
+            set { if (value >= 0) { vit = value; } }
+        }
+
+        private int skill1;
         /// <summary>
         /// Gets or sets number of the first skill
         /// </summary>
         public int Skill1
         {
-            get { return Skill1; }
-            set { if (value >= 0) { Skill1 = value; } }
+            get { return skill1; }
+            set { if (value >= 0) { skill1 = value; } }
         }
 
         private int skill2;
@@ -85,34 +126,48 @@ namespace Diablo_3_Dmg_Calculator.Models
         }
     }
 
+    /// <summary>
+    /// A class for the item values.
+    /// </summary>
     public class item
     {
         private bool indestructible;
+
+        ///
+        ///4 of each because of the possibility to socket gems into items. Max is 3 sockets on any item.
+        ///
+
         private int str1;
         private int str2;
         private int str3;
         private int str4;
+
         private int dex1;
         private int dex2;
         private int dex3;
         private int dex4;
+
         private int int1;
         private int int2;
         private int int3;
-        private int int4;     
+        private int int4;  
+   
         private int vit1;
         private int vit2;
         private int vit3;
         private int vit4;
+
         private int armor;
         private int minDmg;
         private int maxDmg;
         private int bonusExperience;
+
         private double chanceToBlind;
         private double chanceToFreeze;
         private double chanceToImmobilize;
         private double chanceToKnockback;
         private double chanceToSlow;
+
         private double attspeed;
         private double critchrance;
         private double critdmg;
@@ -139,6 +194,6 @@ namespace Diablo_3_Dmg_Calculator.Models
         private double livePerKill;
         private double livePerHit;
         private double healthGlobes;
-        private double pickUoRange;   
+        private double pickUpRange;   
     }
 }
