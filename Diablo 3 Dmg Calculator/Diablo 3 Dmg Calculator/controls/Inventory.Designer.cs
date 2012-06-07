@@ -55,11 +55,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.invDpsTextBox = new System.Windows.Forms.TextBox();
-            this.invMinDmgTextBox = new System.Windows.Forms.TextBox();
-            this.invMaxDmgTextBox = new System.Windows.Forms.TextBox();
-            this.invArmorTextBox = new System.Windows.Forms.TextBox();
-            this.invLifeTextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -406,56 +406,71 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "Armor";
             // 
-            // invDpsTextBox
+            // label7
             // 
-            this.invDpsTextBox.Location = new System.Drawing.Point(563, 35);
-            this.invDpsTextBox.Name = "invDpsTextBox";
-            this.invDpsTextBox.ReadOnly = true;
-            this.invDpsTextBox.Size = new System.Drawing.Size(135, 20);
-            this.invDpsTextBox.TabIndex = 27;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(622, 39);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 17);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "label7";
             // 
-            // invMinDmgTextBox
+            // label8
             // 
-            this.invMinDmgTextBox.Location = new System.Drawing.Point(563, 135);
-            this.invMinDmgTextBox.Name = "invMinDmgTextBox";
-            this.invMinDmgTextBox.ReadOnly = true;
-            this.invMinDmgTextBox.Size = new System.Drawing.Size(135, 20);
-            this.invMinDmgTextBox.TabIndex = 28;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(622, 89);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 17);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "label8";
             // 
-            // invMaxDmgTextBox
+            // label9
             // 
-            this.invMaxDmgTextBox.Location = new System.Drawing.Point(563, 185);
-            this.invMaxDmgTextBox.Name = "invMaxDmgTextBox";
-            this.invMaxDmgTextBox.ReadOnly = true;
-            this.invMaxDmgTextBox.Size = new System.Drawing.Size(135, 20);
-            this.invMaxDmgTextBox.TabIndex = 29;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(622, 139);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 17);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "label9";
             // 
-            // invArmorTextBox
+            // label10
             // 
-            this.invArmorTextBox.Location = new System.Drawing.Point(563, 235);
-            this.invArmorTextBox.Name = "invArmorTextBox";
-            this.invArmorTextBox.ReadOnly = true;
-            this.invArmorTextBox.Size = new System.Drawing.Size(135, 20);
-            this.invArmorTextBox.TabIndex = 30;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(622, 189);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 17);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "label10";
             // 
-            // invLifeTextBox
+            // label11
             // 
-            this.invLifeTextBox.Location = new System.Drawing.Point(563, 85);
-            this.invLifeTextBox.Name = "invLifeTextBox";
-            this.invLifeTextBox.ReadOnly = true;
-            this.invLifeTextBox.Size = new System.Drawing.Size(135, 20);
-            this.invLifeTextBox.TabIndex = 31;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(622, 239);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(49, 17);
+            this.label11.TabIndex = 31;
+            this.label11.Text = "label11";
             // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.invLifeTextBox);
-            this.Controls.Add(this.invArmorTextBox);
-            this.Controls.Add(this.invMaxDmgTextBox);
-            this.Controls.Add(this.invMinDmgTextBox);
-            this.Controls.Add(this.invDpsTextBox);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -519,10 +534,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox invDpsTextBox;
-        private System.Windows.Forms.TextBox invMinDmgTextBox;
-        private System.Windows.Forms.TextBox invMaxDmgTextBox;
-        private System.Windows.Forms.TextBox invArmorTextBox;
-        private System.Windows.Forms.TextBox invLifeTextBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

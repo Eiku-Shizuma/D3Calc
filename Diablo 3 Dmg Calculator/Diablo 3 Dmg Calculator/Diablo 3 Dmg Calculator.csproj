@@ -70,15 +70,11 @@
     <Compile Include="controls\MainBar.Designer.cs">
       <DependentUpon>MainBar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Model.cs" />
     <Compile Include="Operations\Calculations.cs" />
+    <Compile Include="Operations\Save.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="controls\Skills.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="controls\Skills.Designer.cs">
-      <DependentUpon>Skills.cs</DependentUpon>
-    </Compile>
     <Compile Include="controls\Statistics.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -87,9 +83,6 @@
     </Compile>
     <EmbeddedResource Include="controls\Inventory.resx">
       <DependentUpon>Inventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="controls\Skills.resx">
-      <DependentUpon>Skills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="controls\Statistics.resx">
       <DependentUpon>Statistics.cs</DependentUpon>

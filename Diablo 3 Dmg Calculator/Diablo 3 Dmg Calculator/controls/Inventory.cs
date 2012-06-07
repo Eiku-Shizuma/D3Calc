@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Diablo_3_Dmg_Calculator.Operations;
+
 
 namespace Diablo_3_Dmg_Calculator
 {
@@ -15,5 +17,7 @@ namespace Diablo_3_Dmg_Calculator
         {
             InitializeComponent();
         }
+
+
     }
 }
