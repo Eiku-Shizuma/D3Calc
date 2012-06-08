@@ -61,45 +61,18 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.headPanel = new System.Windows.Forms.Panel();
-            this.headPanelLabel = new System.Windows.Forms.Label();
-            this.shoulderPanel = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
             this.amuletPanel = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
             this.beltPanel = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
             this.chestPanel = new System.Windows.Forms.Panel();
-            this.chestLabel = new System.Windows.Forms.Label();
             this.bracersPanel = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
             this.glovesPanel = new System.Windows.Forms.Panel();
-            this.glovesLabel = new System.Windows.Forms.Label();
             this.ring1Panel = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
             this.ring2Panel = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
             this.mainHandPanel = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.offHandPanel = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
             this.bootsPanel = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
             this.pantsPanel = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.shoulderPanel = new System.Windows.Forms.Panel();
             this.contextMenu1 = new Diablo_3_Dmg_Calculator.controls.ContextMenu();
-            this.headPanel.SuspendLayout();
-            this.shoulderPanel.SuspendLayout();
-            this.amuletPanel.SuspendLayout();
-            this.beltPanel.SuspendLayout();
-            this.chestPanel.SuspendLayout();
-            this.bracersPanel.SuspendLayout();
-            this.glovesPanel.SuspendLayout();
-            this.ring1Panel.SuspendLayout();
-            this.ring2Panel.SuspendLayout();
-            this.mainHandPanel.SuspendLayout();
-            this.offHandPanel.SuspendLayout();
-            this.bootsPanel.SuspendLayout();
-            this.pantsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -286,8 +259,6 @@
             this.invMainPanel.Size = new System.Drawing.Size(80, 120);
             this.invMainPanel.TabIndex = 5;
             this.invMainPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invMainPanel.MouseLeave += new System.EventHandler(this.HideMainPanel);
-            this.invMainPanel.MouseHover += new System.EventHandler(this.ShowMainPanel);
             // 
             // invBootPanel
             // 
@@ -308,8 +279,6 @@
             this.invOffPanel.Size = new System.Drawing.Size(80, 120);
             this.invOffPanel.TabIndex = 7;
             this.invOffPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invOffPanel.MouseLeave += new System.EventHandler(this.HideOffPanel);
-            this.invOffPanel.MouseHover += new System.EventHandler(this.ShowOffPanel);
             // 
             // invShoulderPanel
             // 
@@ -546,48 +515,13 @@
             this.headPanel.AutoSize = true;
             this.headPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.headPanel.BackColor = System.Drawing.Color.Transparent;
-            this.headPanel.Controls.Add(this.headPanelLabel);
             this.headPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headPanel.ForeColor = System.Drawing.Color.Cyan;
             this.headPanel.Location = new System.Drawing.Point(410, 10);
             this.headPanel.Name = "headPanel";
-            this.headPanel.Size = new System.Drawing.Size(58, 14);
+            this.headPanel.Size = new System.Drawing.Size(0, 0);
             this.headPanel.TabIndex = 32;
             this.headPanel.Visible = false;
-            // 
-            // headPanelLabel
-            // 
-            this.headPanelLabel.AutoSize = true;
-            this.headPanelLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.headPanelLabel.Location = new System.Drawing.Point(1, 1);
-            this.headPanelLabel.Name = "headPanelLabel";
-            this.headPanelLabel.Size = new System.Drawing.Size(54, 13);
-            this.headPanelLabel.TabIndex = 0;
-            this.headPanelLabel.Text = "Attributes";
-            // 
-            // shoulderPanel
-            // 
-            this.shoulderPanel.AutoSize = true;
-            this.shoulderPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.shoulderPanel.BackColor = System.Drawing.Color.Transparent;
-            this.shoulderPanel.Controls.Add(this.label12);
-            this.shoulderPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.shoulderPanel.ForeColor = System.Drawing.Color.Cyan;
-            this.shoulderPanel.Location = new System.Drawing.Point(320, 55);
-            this.shoulderPanel.Name = "shoulderPanel";
-            this.shoulderPanel.Size = new System.Drawing.Size(58, 14);
-            this.shoulderPanel.TabIndex = 33;
-            this.shoulderPanel.Visible = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1, 1);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 13);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Attributes";
             // 
             // amuletPanel
             // 
@@ -595,48 +529,26 @@
             this.amuletPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.amuletPanel.BackColor = System.Drawing.Color.Transparent;
             this.amuletPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.amuletPanel.Controls.Add(this.label13);
             this.amuletPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.amuletPanel.ForeColor = System.Drawing.Color.Cyan;
             this.amuletPanel.Location = new System.Drawing.Point(500, 65);
             this.amuletPanel.Name = "amuletPanel";
-            this.amuletPanel.Size = new System.Drawing.Size(58, 14);
+            this.amuletPanel.Size = new System.Drawing.Size(0, 0);
             this.amuletPanel.TabIndex = 34;
             this.amuletPanel.Visible = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1, 1);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 13);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Attributes";
             // 
             // beltPanel
             // 
             this.beltPanel.AutoSize = true;
             this.beltPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.beltPanel.BackColor = System.Drawing.Color.Transparent;
-            this.beltPanel.Controls.Add(this.label14);
             this.beltPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beltPanel.ForeColor = System.Drawing.Color.Cyan;
             this.beltPanel.Location = new System.Drawing.Point(415, 250);
             this.beltPanel.Name = "beltPanel";
-            this.beltPanel.Size = new System.Drawing.Size(58, 14);
+            this.beltPanel.Size = new System.Drawing.Size(0, 0);
             this.beltPanel.TabIndex = 35;
             this.beltPanel.Visible = false;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1, 1);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(54, 13);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Attributes";
             // 
             // chestPanel
             // 
@@ -644,24 +556,13 @@
             this.chestPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.chestPanel.BackColor = System.Drawing.Color.Transparent;
             this.chestPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.chestPanel.Controls.Add(this.chestLabel);
             this.chestPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chestPanel.ForeColor = System.Drawing.Color.Cyan;
             this.chestPanel.Location = new System.Drawing.Point(415, 115);
             this.chestPanel.Name = "chestPanel";
-            this.chestPanel.Size = new System.Drawing.Size(58, 14);
+            this.chestPanel.Size = new System.Drawing.Size(0, 0);
             this.chestPanel.TabIndex = 36;
             this.chestPanel.Visible = false;
-            // 
-            // chestLabel
-            // 
-            this.chestLabel.AutoSize = true;
-            this.chestLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chestLabel.Location = new System.Drawing.Point(1, 1);
-            this.chestLabel.Name = "chestLabel";
-            this.chestLabel.Size = new System.Drawing.Size(54, 13);
-            this.chestLabel.TabIndex = 0;
-            this.chestLabel.Text = "Attributes";
             // 
             // bracersPanel
             // 
@@ -669,199 +570,111 @@
             this.bracersPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bracersPanel.BackColor = System.Drawing.Color.Transparent;
             this.bracersPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bracersPanel.Controls.Add(this.label16);
             this.bracersPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bracersPanel.ForeColor = System.Drawing.Color.Cyan;
             this.bracersPanel.Location = new System.Drawing.Point(530, 160);
             this.bracersPanel.Name = "bracersPanel";
-            this.bracersPanel.Size = new System.Drawing.Size(58, 14);
+            this.bracersPanel.Size = new System.Drawing.Size(0, 0);
             this.bracersPanel.TabIndex = 37;
             this.bracersPanel.Visible = false;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1, 1);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(54, 13);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Attributes";
             // 
             // glovesPanel
             // 
             this.glovesPanel.AutoSize = true;
             this.glovesPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.glovesPanel.BackColor = System.Drawing.Color.Transparent;
-            this.glovesPanel.Controls.Add(this.glovesLabel);
             this.glovesPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.glovesPanel.ForeColor = System.Drawing.Color.Cyan;
             this.glovesPanel.Location = new System.Drawing.Point(300, 160);
             this.glovesPanel.Name = "glovesPanel";
-            this.glovesPanel.Size = new System.Drawing.Size(58, 14);
+            this.glovesPanel.Size = new System.Drawing.Size(0, 0);
             this.glovesPanel.TabIndex = 38;
             this.glovesPanel.Visible = false;
-            // 
-            // glovesLabel
-            // 
-            this.glovesLabel.AutoSize = true;
-            this.glovesLabel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.glovesLabel.Location = new System.Drawing.Point(1, 1);
-            this.glovesLabel.Name = "glovesLabel";
-            this.glovesLabel.Size = new System.Drawing.Size(54, 13);
-            this.glovesLabel.TabIndex = 0;
-            this.glovesLabel.Text = "Attributes";
             // 
             // ring1Panel
             // 
             this.ring1Panel.AutoSize = true;
             this.ring1Panel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ring1Panel.BackColor = System.Drawing.Color.Transparent;
-            this.ring1Panel.Controls.Add(this.label15);
             this.ring1Panel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ring1Panel.ForeColor = System.Drawing.Color.Cyan;
             this.ring1Panel.Location = new System.Drawing.Point(290, 281);
             this.ring1Panel.Name = "ring1Panel";
-            this.ring1Panel.Size = new System.Drawing.Size(58, 14);
+            this.ring1Panel.Size = new System.Drawing.Size(0, 0);
             this.ring1Panel.TabIndex = 39;
             this.ring1Panel.Visible = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(1, 1);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(54, 13);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Attributes";
             // 
             // ring2Panel
             // 
             this.ring2Panel.AutoSize = true;
             this.ring2Panel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ring2Panel.BackColor = System.Drawing.Color.Transparent;
-            this.ring2Panel.Controls.Add(this.label17);
             this.ring2Panel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ring2Panel.ForeColor = System.Drawing.Color.Cyan;
             this.ring2Panel.Location = new System.Drawing.Point(500, 281);
             this.ring2Panel.Name = "ring2Panel";
-            this.ring2Panel.Size = new System.Drawing.Size(58, 14);
+            this.ring2Panel.Size = new System.Drawing.Size(0, 0);
             this.ring2Panel.TabIndex = 40;
             this.ring2Panel.Visible = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(1, 1);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(54, 13);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Attributes";
             // 
             // mainHandPanel
             // 
             this.mainHandPanel.AutoSize = true;
             this.mainHandPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.mainHandPanel.BackColor = System.Drawing.Color.Transparent;
-            this.mainHandPanel.Controls.Add(this.label18);
             this.mainHandPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainHandPanel.ForeColor = System.Drawing.Color.Cyan;
             this.mainHandPanel.Location = new System.Drawing.Point(300, 350);
             this.mainHandPanel.Name = "mainHandPanel";
-            this.mainHandPanel.Size = new System.Drawing.Size(58, 14);
+            this.mainHandPanel.Size = new System.Drawing.Size(0, 0);
             this.mainHandPanel.TabIndex = 41;
             this.mainHandPanel.Visible = false;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(1, 1);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(54, 13);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Attributes";
-            // 
-            // offHandPanel
-            // 
-            this.offHandPanel.AutoSize = true;
-            this.offHandPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.offHandPanel.BackColor = System.Drawing.Color.Transparent;
-            this.offHandPanel.Controls.Add(this.label19);
-            this.offHandPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.offHandPanel.ForeColor = System.Drawing.Color.Cyan;
-            this.offHandPanel.Location = new System.Drawing.Point(530, 351);
-            this.offHandPanel.Name = "offHandPanel";
-            this.offHandPanel.Size = new System.Drawing.Size(58, 14);
-            this.offHandPanel.TabIndex = 42;
-            this.offHandPanel.Visible = false;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(1, 1);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(54, 13);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Attributes";
             // 
             // bootsPanel
             // 
             this.bootsPanel.AutoSize = true;
             this.bootsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bootsPanel.BackColor = System.Drawing.Color.Transparent;
-            this.bootsPanel.Controls.Add(this.label20);
             this.bootsPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bootsPanel.ForeColor = System.Drawing.Color.Cyan;
             this.bootsPanel.Location = new System.Drawing.Point(410, 400);
             this.bootsPanel.Name = "bootsPanel";
-            this.bootsPanel.Size = new System.Drawing.Size(58, 14);
+            this.bootsPanel.Size = new System.Drawing.Size(0, 0);
             this.bootsPanel.TabIndex = 43;
             this.bootsPanel.Visible = false;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1, 1);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(54, 13);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Attributes";
             // 
             // pantsPanel
             // 
             this.pantsPanel.AutoSize = true;
             this.pantsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pantsPanel.BackColor = System.Drawing.Color.Transparent;
-            this.pantsPanel.Controls.Add(this.label21);
             this.pantsPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pantsPanel.ForeColor = System.Drawing.Color.Cyan;
             this.pantsPanel.Location = new System.Drawing.Point(410, 295);
             this.pantsPanel.Name = "pantsPanel";
-            this.pantsPanel.Size = new System.Drawing.Size(58, 14);
+            this.pantsPanel.Size = new System.Drawing.Size(0, 0);
             this.pantsPanel.TabIndex = 44;
             this.pantsPanel.Visible = false;
             // 
-            // label21
+            // shoulderPanel
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(1, 1);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(54, 13);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "Attributes";
+            this.shoulderPanel.AutoSize = true;
+            this.shoulderPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.shoulderPanel.BackColor = System.Drawing.Color.Transparent;
+            this.shoulderPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shoulderPanel.ForeColor = System.Drawing.Color.Cyan;
+            this.shoulderPanel.Location = new System.Drawing.Point(320, 55);
+            this.shoulderPanel.Name = "shoulderPanel";
+            this.shoulderPanel.Size = new System.Drawing.Size(0, 0);
+            this.shoulderPanel.TabIndex = 33;
+            this.shoulderPanel.Visible = false;
             // 
             // contextMenu1
             // 
             this.contextMenu1.BackColor = System.Drawing.Color.Silver;
-            this.contextMenu1.Location = new System.Drawing.Point(346, 429);
+            this.contextMenu1.Location = new System.Drawing.Point(551, 236);
             this.contextMenu1.Name = "contextMenu1";
-            this.contextMenu1.Size = new System.Drawing.Size(286, 27);
+            this.contextMenu1.Size = new System.Drawing.Size(156, 231);
             this.contextMenu1.TabIndex = 45;
             this.contextMenu1.Visible = false;
             // 
@@ -873,7 +686,6 @@
             this.Controls.Add(this.contextMenu1);
             this.Controls.Add(this.pantsPanel);
             this.Controls.Add(this.bootsPanel);
-            this.Controls.Add(this.offHandPanel);
             this.Controls.Add(this.mainHandPanel);
             this.Controls.Add(this.ring2Panel);
             this.Controls.Add(this.ring1Panel);
@@ -913,37 +725,11 @@
             this.Controls.Add(this.invBracersPanel);
             this.Controls.Add(this.invChestPanel);
             this.Controls.Add(this.invGlovesPanel);
-            this.Controls.Add(this.invHeadPanel);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.invHeadPanel);
             this.Name = "Inventory";
             this.Size = new System.Drawing.Size(710, 502);
-            this.headPanel.ResumeLayout(false);
-            this.headPanel.PerformLayout();
-            this.shoulderPanel.ResumeLayout(false);
-            this.shoulderPanel.PerformLayout();
-            this.amuletPanel.ResumeLayout(false);
-            this.amuletPanel.PerformLayout();
-            this.beltPanel.ResumeLayout(false);
-            this.beltPanel.PerformLayout();
-            this.chestPanel.ResumeLayout(false);
-            this.chestPanel.PerformLayout();
-            this.bracersPanel.ResumeLayout(false);
-            this.bracersPanel.PerformLayout();
-            this.glovesPanel.ResumeLayout(false);
-            this.glovesPanel.PerformLayout();
-            this.ring1Panel.ResumeLayout(false);
-            this.ring1Panel.PerformLayout();
-            this.ring2Panel.ResumeLayout(false);
-            this.ring2Panel.PerformLayout();
-            this.mainHandPanel.ResumeLayout(false);
-            this.mainHandPanel.PerformLayout();
-            this.offHandPanel.ResumeLayout(false);
-            this.offHandPanel.PerformLayout();
-            this.bootsPanel.ResumeLayout(false);
-            this.bootsPanel.PerformLayout();
-            this.pantsPanel.ResumeLayout(false);
-            this.pantsPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -984,31 +770,17 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel headPanel;
-        private System.Windows.Forms.Label headPanelLabel;
-        private System.Windows.Forms.Panel shoulderPanel;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel amuletPanel;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel beltPanel;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel chestPanel;
-        private System.Windows.Forms.Label chestLabel;
         private System.Windows.Forms.Panel bracersPanel;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel glovesPanel;
-        private System.Windows.Forms.Label glovesLabel;
         private System.Windows.Forms.Panel ring1Panel;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel ring2Panel;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel mainHandPanel;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Panel offHandPanel;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel bootsPanel;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel pantsPanel;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel shoulderPanel;
         private controls.ContextMenu contextMenu1;
     }
 }

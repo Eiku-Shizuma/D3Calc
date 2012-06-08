@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContextMenu));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.contextBoxAddLabel = new System.Windows.Forms.Label();
+            this.contextMenuAttributecomboBox = new System.Windows.Forms.ComboBox();
+            this.contextMenuAttributeValueTextBox = new System.Windows.Forms.TextBox();
+            this.contextMenuAddButtonLabel = new System.Windows.Forms.Label();
+            this.contextAddListView = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // contextMenuAttributecomboBox
             // 
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.contextMenuAttributecomboBox.AutoCompleteCustomSource.AddRange(new string[] {
             "Strength",
             "Dexterity",
             "Intelligence",
@@ -44,42 +45,51 @@
             ".",
             ".",
             "."});
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(124, 21);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.Text = "Attribute";
+            this.contextMenuAttributecomboBox.FormattingEnabled = true;
+            this.contextMenuAttributecomboBox.Location = new System.Drawing.Point(3, 3);
+            this.contextMenuAttributecomboBox.Name = "contextMenuAttributecomboBox";
+            this.contextMenuAttributecomboBox.Size = new System.Drawing.Size(150, 21);
+            this.contextMenuAttributecomboBox.TabIndex = 0;
+            this.contextMenuAttributecomboBox.Text = "Attribute";
             // 
-            // textBox1
+            // contextMenuAttributeValueTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(69, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Value";
+            this.contextMenuAttributeValueTextBox.Location = new System.Drawing.Point(3, 30);
+            this.contextMenuAttributeValueTextBox.Name = "contextMenuAttributeValueTextBox";
+            this.contextMenuAttributeValueTextBox.Size = new System.Drawing.Size(69, 20);
+            this.contextMenuAttributeValueTextBox.TabIndex = 1;
+            this.contextMenuAttributeValueTextBox.Text = "Value";
             // 
-            // contextBoxAddLabel
+            // contextMenuAddButtonLabel
             // 
-            this.contextBoxAddLabel.ForeColor = System.Drawing.Color.White;
-            this.contextBoxAddLabel.Image = ((System.Drawing.Image)(resources.GetObject("contextBoxAddLabel.Image")));
-            this.contextBoxAddLabel.Location = new System.Drawing.Point(208, 2);
-            this.contextBoxAddLabel.Name = "contextBoxAddLabel";
-            this.contextBoxAddLabel.Size = new System.Drawing.Size(75, 23);
-            this.contextBoxAddLabel.TabIndex = 2;
-            this.contextBoxAddLabel.Text = "Add";
-            this.contextBoxAddLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.contextMenuAddButtonLabel.ForeColor = System.Drawing.Color.White;
+            this.contextMenuAddButtonLabel.Image = ((System.Drawing.Image)(resources.GetObject("contextMenuAddButtonLabel.Image")));
+            this.contextMenuAddButtonLabel.Location = new System.Drawing.Point(78, 29);
+            this.contextMenuAddButtonLabel.Name = "contextMenuAddButtonLabel";
+            this.contextMenuAddButtonLabel.Size = new System.Drawing.Size(75, 23);
+            this.contextMenuAddButtonLabel.TabIndex = 2;
+            this.contextMenuAddButtonLabel.Text = "Add";
+            this.contextMenuAddButtonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // contextAddListView
+            // 
+            this.contextAddListView.Location = new System.Drawing.Point(3, 56);
+            this.contextAddListView.Name = "contextAddListView";
+            this.contextAddListView.Size = new System.Drawing.Size(150, 172);
+            this.contextAddListView.TabIndex = 3;
+            this.contextAddListView.UseCompatibleStateImageBehavior = false;
             // 
             // ContextMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.Controls.Add(this.contextBoxAddLabel);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.contextAddListView);
+            this.Controls.Add(this.contextMenuAddButtonLabel);
+            this.Controls.Add(this.contextMenuAttributeValueTextBox);
+            this.Controls.Add(this.contextMenuAttributecomboBox);
             this.Name = "ContextMenu";
-            this.Size = new System.Drawing.Size(286, 27);
+            this.Size = new System.Drawing.Size(156, 231);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,8 +97,9 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label contextBoxAddLabel;
+        private System.Windows.Forms.ComboBox contextMenuAttributecomboBox;
+        private System.Windows.Forms.TextBox contextMenuAttributeValueTextBox;
+        private System.Windows.Forms.Label contextMenuAddButtonLabel;
+        private System.Windows.Forms.ListView contextAddListView;
     }
 }
