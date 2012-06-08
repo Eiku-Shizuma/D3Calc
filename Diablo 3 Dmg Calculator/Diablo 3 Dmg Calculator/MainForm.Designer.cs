@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.inventory1 = new Diablo_3_Dmg_Calculator.Inventory();
             this.SuspendLayout();
             // 
             // inventory1
             // 
-            this.inventory1.BackColor = System.Drawing.Color.Transparent;
-            this.inventory1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("inventory1.BackgroundImage")));
+            this.inventory1.BackColor = System.Drawing.Color.Silver;
             this.inventory1.Location = new System.Drawing.Point(0, 30);
             this.inventory1.Name = "inventory1";
             this.inventory1.Size = new System.Drawing.Size(710, 502);
@@ -57,6 +55,7 @@
         #endregion
 
         private Inventory inventory1;
+
 
 
 

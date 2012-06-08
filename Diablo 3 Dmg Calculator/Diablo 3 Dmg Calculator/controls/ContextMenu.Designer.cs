@@ -36,6 +36,14 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            "Strength",
+            "Dexterity",
+            "Intelligence",
+            "Vitality",
+            ".",
+            ".",
+            "."});
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(3, 3);
             this.comboBox1.Name = "comboBox1";

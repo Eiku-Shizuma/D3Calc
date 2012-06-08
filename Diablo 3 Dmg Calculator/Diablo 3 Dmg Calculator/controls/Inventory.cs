@@ -18,6 +18,26 @@ namespace Diablo_3_Dmg_Calculator
             InitializeComponent();
         }
 
+        private void ContextMenuControl(object sender, MouseEventArgs e) 
+        {
+
+            Panel panel = (Panel)sender;
+            System.Drawing.Point i = panel.Location;
+            i.X += 10;
+            i.Y += 10;
+
+            if (this.contextMenu1.Visible == true)
+            {
+                this.contextMenu1.Visible = false;
+            }
+            else 
+            {
+                this.contextMenu1.Location = i;
+                this.contextMenu1.Visible = true;
+            }
+        }
+
+
         private void ShowHeadPanel(object sender, EventArgs e)
         {
             this.headPanel.Visible = true;
@@ -97,6 +117,60 @@ namespace Diablo_3_Dmg_Calculator
         {
             this.pantsPanel.Visible = false;
         }
-           
+
+        private void ShowBootsPanel(object sender, EventArgs e)
+        {
+            this.bootsPanel.Visible = true;
+        }
+
+        private void HideBootsPanel(object sender, EventArgs e)
+        {
+            this.bootsPanel.Visible = false;
+        }
+
+        private void ShowMainPanel(object sender, EventArgs e)
+        {
+            this.mainHandPanel.Visible = true;
+        }
+
+        private void HideMainPanel(object sender, EventArgs e)
+        {
+            this.mainHandPanel.Visible = false;
+        }
+
+        private void ShowOffPanel(object sender, EventArgs e)
+        {
+            this.offHandPanel.Visible = true;
+        }
+
+        private void HideOffPanel(object sender, EventArgs e)
+        {
+            this.offHandPanel.Visible = false;
+        }
+
+        private void ShowRing1Panel(object sender, EventArgs e)
+        {
+            this.ring1Panel.Visible = true;
+        }
+
+        private void HideRing1Panel(object sender, EventArgs e)
+        {
+            this.ring1Panel.Visible = false;
+        }
+
+        private void ShowRing2Panel(object sender, EventArgs e)
+        {
+            this.ring2Panel.Visible = true;
+        }
+
+        private void HideRing2Panel(object sender, EventArgs e)
+        {
+            this.ring2Panel.Visible = false;
+        }
+
+        private void ContextMenuControl()
+        {
+
+        }
     }
 }

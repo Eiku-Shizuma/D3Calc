@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventory));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.invHeadPanel = new System.Windows.Forms.Panel();
@@ -87,6 +86,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.pantsPanel = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
+            this.contextMenu1 = new Diablo_3_Dmg_Calculator.controls.ContextMenu();
             this.headPanel.SuspendLayout();
             this.shoulderPanel.SuspendLayout();
             this.amuletPanel.SuspendLayout();
@@ -197,6 +197,7 @@
             this.invHeadPanel.Name = "invHeadPanel";
             this.invHeadPanel.Size = new System.Drawing.Size(70, 90);
             this.invHeadPanel.TabIndex = 2;
+            this.invHeadPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
             this.invHeadPanel.MouseLeave += new System.EventHandler(this.HideHeadPanel);
             this.invHeadPanel.MouseHover += new System.EventHandler(this.ShowHeadPanel);
             // 
@@ -207,6 +208,7 @@
             this.invGlovesPanel.Name = "invGlovesPanel";
             this.invGlovesPanel.Size = new System.Drawing.Size(80, 100);
             this.invGlovesPanel.TabIndex = 3;
+            this.invGlovesPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
             this.invGlovesPanel.MouseLeave += new System.EventHandler(this.HideGlovesPanel);
             this.invGlovesPanel.MouseHover += new System.EventHandler(this.ShowGlovesPanel);
             // 
@@ -217,6 +219,7 @@
             this.invChestPanel.Name = "invChestPanel";
             this.invChestPanel.Size = new System.Drawing.Size(80, 120);
             this.invChestPanel.TabIndex = 4;
+            this.invChestPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
             this.invChestPanel.MouseLeave += new System.EventHandler(this.HideChestPanel);
             this.invChestPanel.MouseHover += new System.EventHandler(this.ShowChestPanel);
             // 
@@ -227,6 +230,7 @@
             this.invBracersPanel.Name = "invBracersPanel";
             this.invBracersPanel.Size = new System.Drawing.Size(80, 100);
             this.invBracersPanel.TabIndex = 4;
+            this.invBracersPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
             this.invBracersPanel.MouseLeave += new System.EventHandler(this.HideBracersPanel);
             this.invBracersPanel.MouseHover += new System.EventHandler(this.ShowBracersPanel);
             // 
@@ -237,6 +241,9 @@
             this.invRing1Panel.Name = "invRing1Panel";
             this.invRing1Panel.Size = new System.Drawing.Size(40, 40);
             this.invRing1Panel.TabIndex = 4;
+            this.invRing1Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
+            this.invRing1Panel.MouseLeave += new System.EventHandler(this.HideRing1Panel);
+            this.invRing1Panel.MouseHover += new System.EventHandler(this.ShowRing1Panel);
             // 
             // invBeltPanel
             // 
@@ -245,6 +252,7 @@
             this.invBeltPanel.Name = "invBeltPanel";
             this.invBeltPanel.Size = new System.Drawing.Size(80, 30);
             this.invBeltPanel.TabIndex = 5;
+            this.invBeltPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
             this.invBeltPanel.MouseLeave += new System.EventHandler(this.HideBeltPanel);
             this.invBeltPanel.MouseHover += new System.EventHandler(this.ShowBeltPanel);
             // 
@@ -255,6 +263,9 @@
             this.invRing2Panel.Name = "invRing2Panel";
             this.invRing2Panel.Size = new System.Drawing.Size(40, 40);
             this.invRing2Panel.TabIndex = 4;
+            this.invRing2Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
+            this.invRing2Panel.MouseLeave += new System.EventHandler(this.HideRing2Panel);
+            this.invRing2Panel.MouseHover += new System.EventHandler(this.ShowRing2Panel);
             // 
             // invPantsPanel
             // 
@@ -263,6 +274,7 @@
             this.invPantsPanel.Name = "invPantsPanel";
             this.invPantsPanel.Size = new System.Drawing.Size(70, 90);
             this.invPantsPanel.TabIndex = 6;
+            this.invPantsPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
             this.invPantsPanel.MouseLeave += new System.EventHandler(this.HidePantsPanel);
             this.invPantsPanel.MouseHover += new System.EventHandler(this.ShowPantsPanel);
             // 
@@ -273,6 +285,9 @@
             this.invMainPanel.Name = "invMainPanel";
             this.invMainPanel.Size = new System.Drawing.Size(80, 120);
             this.invMainPanel.TabIndex = 5;
+            this.invMainPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
+            this.invMainPanel.MouseLeave += new System.EventHandler(this.HideMainPanel);
+            this.invMainPanel.MouseHover += new System.EventHandler(this.ShowMainPanel);
             // 
             // invBootPanel
             // 
@@ -281,6 +296,9 @@
             this.invBootPanel.Name = "invBootPanel";
             this.invBootPanel.Size = new System.Drawing.Size(70, 90);
             this.invBootPanel.TabIndex = 7;
+            this.invBootPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
+            this.invBootPanel.MouseLeave += new System.EventHandler(this.HideBootsPanel);
+            this.invBootPanel.MouseHover += new System.EventHandler(this.ShowBootsPanel);
             // 
             // invOffPanel
             // 
@@ -289,6 +307,9 @@
             this.invOffPanel.Name = "invOffPanel";
             this.invOffPanel.Size = new System.Drawing.Size(80, 120);
             this.invOffPanel.TabIndex = 7;
+            this.invOffPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
+            this.invOffPanel.MouseLeave += new System.EventHandler(this.HideOffPanel);
+            this.invOffPanel.MouseHover += new System.EventHandler(this.ShowOffPanel);
             // 
             // invShoulderPanel
             // 
@@ -297,6 +318,7 @@
             this.invShoulderPanel.Name = "invShoulderPanel";
             this.invShoulderPanel.Size = new System.Drawing.Size(70, 90);
             this.invShoulderPanel.TabIndex = 8;
+            this.invShoulderPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
             this.invShoulderPanel.MouseLeave += new System.EventHandler(this.HideShoulderPanel);
             this.invShoulderPanel.MouseHover += new System.EventHandler(this.ShowShoulderPanel);
             // 
@@ -307,6 +329,7 @@
             this.invNeckPanel.Name = "invNeckPanel";
             this.invNeckPanel.Size = new System.Drawing.Size(60, 60);
             this.invNeckPanel.TabIndex = 9;
+            this.invNeckPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
             this.invNeckPanel.MouseLeave += new System.EventHandler(this.HideAmuletPanel);
             this.invNeckPanel.MouseHover += new System.EventHandler(this.ShowAmuletPanel);
             // 
@@ -594,13 +617,14 @@
             // beltPanel
             // 
             this.beltPanel.AutoSize = true;
+            this.beltPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.beltPanel.BackColor = System.Drawing.Color.Transparent;
             this.beltPanel.Controls.Add(this.label14);
             this.beltPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beltPanel.ForeColor = System.Drawing.Color.Cyan;
             this.beltPanel.Location = new System.Drawing.Point(415, 250);
             this.beltPanel.Name = "beltPanel";
-            this.beltPanel.Size = new System.Drawing.Size(60, 60);
+            this.beltPanel.Size = new System.Drawing.Size(58, 14);
             this.beltPanel.TabIndex = 35;
             this.beltPanel.Visible = false;
             // 
@@ -691,13 +715,14 @@
             // ring1Panel
             // 
             this.ring1Panel.AutoSize = true;
+            this.ring1Panel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ring1Panel.BackColor = System.Drawing.Color.Transparent;
             this.ring1Panel.Controls.Add(this.label15);
             this.ring1Panel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ring1Panel.ForeColor = System.Drawing.Color.Cyan;
             this.ring1Panel.Location = new System.Drawing.Point(290, 281);
             this.ring1Panel.Name = "ring1Panel";
-            this.ring1Panel.Size = new System.Drawing.Size(60, 60);
+            this.ring1Panel.Size = new System.Drawing.Size(58, 14);
             this.ring1Panel.TabIndex = 39;
             this.ring1Panel.Visible = false;
             // 
@@ -714,13 +739,14 @@
             // ring2Panel
             // 
             this.ring2Panel.AutoSize = true;
+            this.ring2Panel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ring2Panel.BackColor = System.Drawing.Color.Transparent;
             this.ring2Panel.Controls.Add(this.label17);
             this.ring2Panel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ring2Panel.ForeColor = System.Drawing.Color.Cyan;
             this.ring2Panel.Location = new System.Drawing.Point(500, 281);
             this.ring2Panel.Name = "ring2Panel";
-            this.ring2Panel.Size = new System.Drawing.Size(60, 60);
+            this.ring2Panel.Size = new System.Drawing.Size(58, 14);
             this.ring2Panel.TabIndex = 40;
             this.ring2Panel.Visible = false;
             // 
@@ -737,13 +763,14 @@
             // mainHandPanel
             // 
             this.mainHandPanel.AutoSize = true;
+            this.mainHandPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.mainHandPanel.BackColor = System.Drawing.Color.Transparent;
             this.mainHandPanel.Controls.Add(this.label18);
             this.mainHandPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainHandPanel.ForeColor = System.Drawing.Color.Cyan;
             this.mainHandPanel.Location = new System.Drawing.Point(300, 350);
             this.mainHandPanel.Name = "mainHandPanel";
-            this.mainHandPanel.Size = new System.Drawing.Size(60, 60);
+            this.mainHandPanel.Size = new System.Drawing.Size(58, 14);
             this.mainHandPanel.TabIndex = 41;
             this.mainHandPanel.Visible = false;
             // 
@@ -760,13 +787,14 @@
             // offHandPanel
             // 
             this.offHandPanel.AutoSize = true;
+            this.offHandPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.offHandPanel.BackColor = System.Drawing.Color.Transparent;
             this.offHandPanel.Controls.Add(this.label19);
             this.offHandPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.offHandPanel.ForeColor = System.Drawing.Color.Cyan;
             this.offHandPanel.Location = new System.Drawing.Point(530, 351);
             this.offHandPanel.Name = "offHandPanel";
-            this.offHandPanel.Size = new System.Drawing.Size(60, 60);
+            this.offHandPanel.Size = new System.Drawing.Size(58, 14);
             this.offHandPanel.TabIndex = 42;
             this.offHandPanel.Visible = false;
             // 
@@ -783,13 +811,14 @@
             // bootsPanel
             // 
             this.bootsPanel.AutoSize = true;
+            this.bootsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bootsPanel.BackColor = System.Drawing.Color.Transparent;
             this.bootsPanel.Controls.Add(this.label20);
             this.bootsPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bootsPanel.ForeColor = System.Drawing.Color.Cyan;
             this.bootsPanel.Location = new System.Drawing.Point(410, 400);
             this.bootsPanel.Name = "bootsPanel";
-            this.bootsPanel.Size = new System.Drawing.Size(60, 60);
+            this.bootsPanel.Size = new System.Drawing.Size(58, 14);
             this.bootsPanel.TabIndex = 43;
             this.bootsPanel.Visible = false;
             // 
@@ -806,13 +835,14 @@
             // pantsPanel
             // 
             this.pantsPanel.AutoSize = true;
+            this.pantsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pantsPanel.BackColor = System.Drawing.Color.Transparent;
             this.pantsPanel.Controls.Add(this.label21);
             this.pantsPanel.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pantsPanel.ForeColor = System.Drawing.Color.Cyan;
             this.pantsPanel.Location = new System.Drawing.Point(410, 295);
             this.pantsPanel.Name = "pantsPanel";
-            this.pantsPanel.Size = new System.Drawing.Size(60, 60);
+            this.pantsPanel.Size = new System.Drawing.Size(58, 14);
             this.pantsPanel.TabIndex = 44;
             this.pantsPanel.Visible = false;
             // 
@@ -826,12 +856,21 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Attributes";
             // 
+            // contextMenu1
+            // 
+            this.contextMenu1.BackColor = System.Drawing.Color.Silver;
+            this.contextMenu1.Location = new System.Drawing.Point(346, 429);
+            this.contextMenu1.Name = "contextMenu1";
+            this.contextMenu1.Size = new System.Drawing.Size(286, 27);
+            this.contextMenu1.TabIndex = 45;
+            this.contextMenu1.Visible = false;
+            // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.Silver;
+            this.Controls.Add(this.contextMenu1);
             this.Controls.Add(this.pantsPanel);
             this.Controls.Add(this.bootsPanel);
             this.Controls.Add(this.offHandPanel);
@@ -970,5 +1009,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel pantsPanel;
         private System.Windows.Forms.Label label21;
+        private controls.ContextMenu contextMenu1;
     }
 }
