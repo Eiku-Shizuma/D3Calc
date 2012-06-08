@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContextMenu));
-            this.contextMenuAttributecomboBox = new System.Windows.Forms.ComboBox();
+            this.contextMenuAttributeComboBox = new System.Windows.Forms.ComboBox();
             this.contextMenuAttributeValueTextBox = new System.Windows.Forms.TextBox();
             this.contextMenuAddButtonLabel = new System.Windows.Forms.Label();
             this.contextAddListView = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // contextMenuAttributecomboBox
+            // contextMenuAttributeComboBox
             // 
-            this.contextMenuAttributecomboBox.AutoCompleteCustomSource.AddRange(new string[] {
+            this.contextMenuAttributeComboBox.AutoCompleteCustomSource.AddRange(new string[] {
             "Strength",
             "Dexterity",
             "Intelligence",
@@ -45,12 +45,12 @@
             ".",
             ".",
             "."});
-            this.contextMenuAttributecomboBox.FormattingEnabled = true;
-            this.contextMenuAttributecomboBox.Location = new System.Drawing.Point(3, 3);
-            this.contextMenuAttributecomboBox.Name = "contextMenuAttributecomboBox";
-            this.contextMenuAttributecomboBox.Size = new System.Drawing.Size(150, 21);
-            this.contextMenuAttributecomboBox.TabIndex = 0;
-            this.contextMenuAttributecomboBox.Text = "Attribute";
+            this.contextMenuAttributeComboBox.FormattingEnabled = true;
+            this.contextMenuAttributeComboBox.Location = new System.Drawing.Point(3, 3);
+            this.contextMenuAttributeComboBox.Name = "contextMenuAttributeComboBox";
+            this.contextMenuAttributeComboBox.Size = new System.Drawing.Size(150, 21);
+            this.contextMenuAttributeComboBox.TabIndex = 0;
+            this.contextMenuAttributeComboBox.Text = "Attribute";
             // 
             // contextMenuAttributeValueTextBox
             // 
@@ -70,6 +70,7 @@
             this.contextMenuAddButtonLabel.TabIndex = 2;
             this.contextMenuAddButtonLabel.Text = "Add";
             this.contextMenuAddButtonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.contextMenuAddButtonLabel.Click += new System.EventHandler(this.contextMenuAddButtonLabel_Click);
             // 
             // contextAddListView
             // 
@@ -87,7 +88,7 @@
             this.Controls.Add(this.contextAddListView);
             this.Controls.Add(this.contextMenuAddButtonLabel);
             this.Controls.Add(this.contextMenuAttributeValueTextBox);
-            this.Controls.Add(this.contextMenuAttributecomboBox);
+            this.Controls.Add(this.contextMenuAttributeComboBox);
             this.Name = "ContextMenu";
             this.Size = new System.Drawing.Size(156, 231);
             this.ResumeLayout(false);
@@ -97,9 +98,10 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox contextMenuAttributecomboBox;
-        private System.Windows.Forms.TextBox contextMenuAttributeValueTextBox;
-        private System.Windows.Forms.Label contextMenuAddButtonLabel;
-        private System.Windows.Forms.ListView contextAddListView;
+        public System.Windows.Forms.ComboBox contextMenuAttributeComboBox;
+        public System.Windows.Forms.TextBox contextMenuAttributeValueTextBox;
+        public System.Windows.Forms.Label contextMenuAddButtonLabel;
+        public System.Windows.Forms.ListView contextAddListView;
+
     }
 }

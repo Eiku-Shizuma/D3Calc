@@ -6,6 +6,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Diablo_3_Dmg_Calculator.Models;
+using Diablo_3_Dmg_Calculator.Operations;
+using Diablo_3_Dmg_Calculator.controls;
 
 namespace Diablo_3_Dmg_Calculator.controls
 {
@@ -15,5 +18,11 @@ namespace Diablo_3_Dmg_Calculator.controls
         {
             InitializeComponent();
         }
+
+        private void contextMenuAddButtonLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+ 

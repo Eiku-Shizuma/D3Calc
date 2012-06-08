@@ -16,5 +16,9 @@ namespace Diablo_3_Dmg_Calculator.Operations
     /// </summary>
     public class Save
     {
+        public void AddAttributes() 
+        {
+            
+        }
     }
 }

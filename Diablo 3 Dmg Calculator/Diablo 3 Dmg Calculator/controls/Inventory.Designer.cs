@@ -171,8 +171,6 @@
             this.invHeadPanel.Size = new System.Drawing.Size(70, 90);
             this.invHeadPanel.TabIndex = 2;
             this.invHeadPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invHeadPanel.MouseLeave += new System.EventHandler(this.HideHeadPanel);
-            this.invHeadPanel.MouseHover += new System.EventHandler(this.ShowHeadPanel);
             // 
             // invGlovesPanel
             // 
@@ -182,8 +180,6 @@
             this.invGlovesPanel.Size = new System.Drawing.Size(80, 100);
             this.invGlovesPanel.TabIndex = 3;
             this.invGlovesPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invGlovesPanel.MouseLeave += new System.EventHandler(this.HideGlovesPanel);
-            this.invGlovesPanel.MouseHover += new System.EventHandler(this.ShowGlovesPanel);
             // 
             // invChestPanel
             // 
@@ -193,8 +189,6 @@
             this.invChestPanel.Size = new System.Drawing.Size(80, 120);
             this.invChestPanel.TabIndex = 4;
             this.invChestPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invChestPanel.MouseLeave += new System.EventHandler(this.HideChestPanel);
-            this.invChestPanel.MouseHover += new System.EventHandler(this.ShowChestPanel);
             // 
             // invBracersPanel
             // 
@@ -204,8 +198,6 @@
             this.invBracersPanel.Size = new System.Drawing.Size(80, 100);
             this.invBracersPanel.TabIndex = 4;
             this.invBracersPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invBracersPanel.MouseLeave += new System.EventHandler(this.HideBracersPanel);
-            this.invBracersPanel.MouseHover += new System.EventHandler(this.ShowBracersPanel);
             // 
             // invRing1Panel
             // 
@@ -215,8 +207,6 @@
             this.invRing1Panel.Size = new System.Drawing.Size(40, 40);
             this.invRing1Panel.TabIndex = 4;
             this.invRing1Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invRing1Panel.MouseLeave += new System.EventHandler(this.HideRing1Panel);
-            this.invRing1Panel.MouseHover += new System.EventHandler(this.ShowRing1Panel);
             // 
             // invBeltPanel
             // 
@@ -226,8 +216,6 @@
             this.invBeltPanel.Size = new System.Drawing.Size(80, 30);
             this.invBeltPanel.TabIndex = 5;
             this.invBeltPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invBeltPanel.MouseLeave += new System.EventHandler(this.HideBeltPanel);
-            this.invBeltPanel.MouseHover += new System.EventHandler(this.ShowBeltPanel);
             // 
             // invRing2Panel
             // 
@@ -237,8 +225,6 @@
             this.invRing2Panel.Size = new System.Drawing.Size(40, 40);
             this.invRing2Panel.TabIndex = 4;
             this.invRing2Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invRing2Panel.MouseLeave += new System.EventHandler(this.HideRing2Panel);
-            this.invRing2Panel.MouseHover += new System.EventHandler(this.ShowRing2Panel);
             // 
             // invPantsPanel
             // 
@@ -248,8 +234,6 @@
             this.invPantsPanel.Size = new System.Drawing.Size(70, 90);
             this.invPantsPanel.TabIndex = 6;
             this.invPantsPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invPantsPanel.MouseLeave += new System.EventHandler(this.HidePantsPanel);
-            this.invPantsPanel.MouseHover += new System.EventHandler(this.ShowPantsPanel);
             // 
             // invMainPanel
             // 
@@ -268,8 +252,6 @@
             this.invBootPanel.Size = new System.Drawing.Size(70, 90);
             this.invBootPanel.TabIndex = 7;
             this.invBootPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invBootPanel.MouseLeave += new System.EventHandler(this.HideBootsPanel);
-            this.invBootPanel.MouseHover += new System.EventHandler(this.ShowBootsPanel);
             // 
             // invOffPanel
             // 
@@ -288,8 +270,6 @@
             this.invShoulderPanel.Size = new System.Drawing.Size(70, 90);
             this.invShoulderPanel.TabIndex = 8;
             this.invShoulderPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invShoulderPanel.MouseLeave += new System.EventHandler(this.HideShoulderPanel);
-            this.invShoulderPanel.MouseHover += new System.EventHandler(this.ShowShoulderPanel);
             // 
             // invNeckPanel
             // 
@@ -299,8 +279,6 @@
             this.invNeckPanel.Size = new System.Drawing.Size(60, 60);
             this.invNeckPanel.TabIndex = 9;
             this.invNeckPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ContextMenuControl);
-            this.invNeckPanel.MouseLeave += new System.EventHandler(this.HideAmuletPanel);
-            this.invNeckPanel.MouseHover += new System.EventHandler(this.ShowAmuletPanel);
             // 
             // inventoryCharNameTextBox
             // 
