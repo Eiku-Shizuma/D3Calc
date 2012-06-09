@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using Diablo_3_Dmg_Calculator.Models;
 using Diablo_3_Dmg_Calculator.Operations;
-using Diablo_3_Dmg_Calculator.controls;
 
 namespace Diablo_3_Dmg_Calculator.controls
 {
@@ -19,9 +18,15 @@ namespace Diablo_3_Dmg_Calculator.controls
             InitializeComponent();
         }
 
-        private void contextMenuAddButtonLabel_Click(object sender, EventArgs e)
+        private void Readdata(object sender, EventArgs e)
         {
-
+            string attribute;
+            double value;
+            System.Drawing.Point loc;
+            attribute = this.contextMenuAttributeComboBox.Text;
+            value = Convert.ToDouble(this.contextMenuAttributeValueTextBox.Text);
+            loc = Location;
+            Charactermodel Character = new Charactermodel();
         }
     }
 }

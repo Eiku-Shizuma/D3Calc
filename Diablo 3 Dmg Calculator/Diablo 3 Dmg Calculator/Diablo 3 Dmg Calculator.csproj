@@ -71,7 +71,7 @@
       <DependentUpon>MainBar.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\itemmodel.cs" />
-    <Compile Include="Models\Charaktermodel.cs" />
+    <Compile Include="Models\Charactermodel.cs" />
     <Compile Include="Operations\Calculations.cs" />
     <Compile Include="Operations\Save.cs" />
     <Compile Include="Program.cs" />

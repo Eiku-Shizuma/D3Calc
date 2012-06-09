@@ -6,6 +6,7 @@
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        public Diablo_3_Dmg_Calculator.Models.Charactermodel Character;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -30,8 +31,9 @@
         {
             this.mainBar1 = new Diablo_3_Dmg_Calculator.MainBar();
             this.statistics1 = new Diablo_3_Dmg_Calculator.Statistics();
-            this.inventory1 = new Diablo_3_Dmg_Calculator.Inventory();
+            this.inventory1 = new Diablo_3_Dmg_Calculator.Inventory(this);
             this.SuspendLayout();
+            Character = new Models.Charactermodel();
             // 
             // mainBar1
             // 

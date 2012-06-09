@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Diablo_3_Dmg_Calculator.Models;
 
 namespace Diablo_3_Dmg_Calculator
 {

@@ -33,11 +33,13 @@
             this.contextMenuAttributeValueTextBox = new System.Windows.Forms.TextBox();
             this.contextMenuAddButtonLabel = new System.Windows.Forms.Label();
             this.contextAddListView = new System.Windows.Forms.ListView();
+            this.Attributes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // contextMenuAttributeComboBox
             // 
-            this.contextMenuAttributeComboBox.AutoCompleteCustomSource.AddRange(new string[] {
+            this.contextMenuAttributeComboBox.FormattingEnabled = true;
+            this.contextMenuAttributeComboBox.Items.AddRange(new object[] {
             "Strength",
             "Dexterity",
             "Intelligence",
@@ -45,7 +47,6 @@
             ".",
             ".",
             "."});
-            this.contextMenuAttributeComboBox.FormattingEnabled = true;
             this.contextMenuAttributeComboBox.Location = new System.Drawing.Point(3, 3);
             this.contextMenuAttributeComboBox.Name = "contextMenuAttributeComboBox";
             this.contextMenuAttributeComboBox.Size = new System.Drawing.Size(150, 21);
@@ -70,10 +71,12 @@
             this.contextMenuAddButtonLabel.TabIndex = 2;
             this.contextMenuAddButtonLabel.Text = "Add";
             this.contextMenuAddButtonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.contextMenuAddButtonLabel.Click += new System.EventHandler(this.contextMenuAddButtonLabel_Click);
             // 
             // contextAddListView
             // 
+            this.contextAddListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Attributes});
+            this.contextAddListView.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contextAddListView.Location = new System.Drawing.Point(3, 56);
             this.contextAddListView.Name = "contextAddListView";
             this.contextAddListView.Size = new System.Drawing.Size(150, 172);
@@ -102,6 +105,7 @@
         public System.Windows.Forms.TextBox contextMenuAttributeValueTextBox;
         public System.Windows.Forms.Label contextMenuAddButtonLabel;
         public System.Windows.Forms.ListView contextAddListView;
+        private System.Windows.Forms.ColumnHeader Attributes;
 
     }
 }
