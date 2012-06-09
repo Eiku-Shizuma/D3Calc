@@ -75,7 +75,6 @@
             this.invLvlcomboBox = new System.Windows.Forms.ComboBox();
             this.attContextMenu = new System.Windows.Forms.Panel();
             this.contextMenuAttributeComboBox = new System.Windows.Forms.ComboBox();
-            this.contextClosePanel = new System.Windows.Forms.Panel();
             this.contextMenuAttributeValueTextBox = new System.Windows.Forms.TextBox();
             this.contextMenuAddButtonLabel = new System.Windows.Forms.Label();
             this.contextAddListView = new System.Windows.Forms.ListView();
@@ -662,7 +661,6 @@
             this.attContextMenu.Controls.Add(this.contextAddListView);
             this.attContextMenu.Controls.Add(this.contextMenuAddButtonLabel);
             this.attContextMenu.Controls.Add(this.contextMenuAttributeValueTextBox);
-            this.attContextMenu.Controls.Add(this.contextClosePanel);
             this.attContextMenu.Controls.Add(this.contextMenuAttributeComboBox);
             this.attContextMenu.Location = new System.Drawing.Point(551, 259);
             this.attContextMenu.Name = "attContextMenu";
@@ -674,26 +672,51 @@
             // 
             this.contextMenuAttributeComboBox.FormattingEnabled = true;
             this.contextMenuAttributeComboBox.Items.AddRange(new object[] {
-            "Strength",
+            "Arcane Resistance",
+            "Attack Speed",
+            "Block Amount",
+            "Block Chance",
+            "Bonus experience",
+            "Bonus to Life",
+            "Chance to Blind",
+            "Chance to Freeze",
+            "Chance to Immobilize",
+            "Chance to Knockback",
+            "Chance to Slow",
+            "Cold Resistance",
+            "Critical Chance",
+            "Critical Damage",
+            "Crowd Control",
+            "Damage",
+            "Damage Reduction",
+            "Damage Reflect",
             "Dexterity",
+            "Dodge Chance",
+            "Fire Resistance",
+            "Gold Find",
+            "Health globes",
+            "Indestructible",
             "Intelligence",
-            "Vitality",
-            ".",
-            ".",
-            "."});
+            "Life per Hit",
+            "Life per Kill",
+            "Life Steal",
+            "Lightning Resistance",
+            "Magic Find",
+            "Melee Damage",
+            "Missile Damage",
+            "Movement Speed",
+            "Physical Resistance",
+            "Pick up Range",
+            "Poison Resistance",
+            "Strength",
+            "Vitality"});
             this.contextMenuAttributeComboBox.Location = new System.Drawing.Point(3, 3);
+            this.contextMenuAttributeComboBox.MaxDropDownItems = 5;
             this.contextMenuAttributeComboBox.Name = "contextMenuAttributeComboBox";
-            this.contextMenuAttributeComboBox.Size = new System.Drawing.Size(125, 21);
+            this.contextMenuAttributeComboBox.Size = new System.Drawing.Size(150, 21);
+            this.contextMenuAttributeComboBox.Sorted = true;
             this.contextMenuAttributeComboBox.TabIndex = 1;
             this.contextMenuAttributeComboBox.Text = "Attribute";
-            // 
-            // contextClosePanel
-            // 
-            this.contextClosePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("contextClosePanel.BackgroundImage")));
-            this.contextClosePanel.Location = new System.Drawing.Point(133, 4);
-            this.contextClosePanel.Name = "contextClosePanel";
-            this.contextClosePanel.Size = new System.Drawing.Size(20, 20);
-            this.contextClosePanel.TabIndex = 5;
             // 
             // contextMenuAttributeValueTextBox
             // 
@@ -832,7 +855,6 @@
         private System.Windows.Forms.ComboBox invLvlcomboBox;
         private System.Windows.Forms.Panel attContextMenu;
         public System.Windows.Forms.ComboBox contextMenuAttributeComboBox;
-        private System.Windows.Forms.Panel contextClosePanel;
         public System.Windows.Forms.TextBox contextMenuAttributeValueTextBox;
         public System.Windows.Forms.Label contextMenuAddButtonLabel;
         public System.Windows.Forms.ListView contextAddListView;

@@ -48,6 +48,45 @@ namespace Diablo_3_Dmg_Calculator
                 this.attContextMenu.Location = i;
                 this.attContextMenu.Visible = true;
             }
+
+            
+
+            
+        }
+
+        private void AddAttribute(object sender, EventArgs e) 
+        {
+            Panel panel = (Panel)sender;
+
+            switch (panel.Name)
+            {
+                case "invHeadPanel":
+                    break;
+                case "invNeckPanel":
+                    break;
+                case "invShoulderPanel":
+                    break;
+                case "invBracersPanel":
+                    break;
+                case "invGlovesPanel":
+                    break;
+                case "invChestPanel":
+                    break;
+                case "invBeltPanel":
+                    break;
+                case "invRing1Panel":
+                    break;
+                case "invRing2Panel":
+                    break;
+                case "invPantsPanel":
+                    break;
+                case "invBootPanel":
+                    break;
+                case "invOffPanel":
+                    break;
+                case "invMainPanel":
+                    break;
+            }
         }
 
         private void AddLevel(object sender, EventArgs e)
@@ -92,11 +131,6 @@ namespace Diablo_3_Dmg_Calculator
                 }
             }
             return stat;
-        }
-
-        private void CloseContextMenue()
-        {
-
         }
     }
 }

@@ -107,7 +107,7 @@
             this.Controls.Add(this.mainBarSaveLabel);
             this.Controls.Add(this.mainBarFileLabel);
             this.Name = "MainBar";
-            this.Size = new System.Drawing.Size(1008, 335);
+            this.Size = new System.Drawing.Size(1008, 29);
             this.ResumeLayout(false);
 
         }
