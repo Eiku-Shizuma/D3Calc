@@ -9,10 +9,14 @@ using System.Windows.Forms;
 using Diablo_3_Dmg_Calculator.Models;
 using Diablo_3_Dmg_Calculator.Operations;
 
+
+
 namespace Diablo_3_Dmg_Calculator.controls
 {
     public partial class ContextMenu : UserControl
     {
+
+
         public ContextMenu()
         {
             InitializeComponent();
@@ -27,14 +31,13 @@ namespace Diablo_3_Dmg_Calculator.controls
             attribute = this.contextMenuAttributeComboBox.Text;
             value = Convert.ToDouble(this.contextMenuAttributeValueTextBox.Text);
             loc = Location;
+            this.contextAddListView.Items.Add(Convert.ToString(loc));            
         }
 
-        public void test() 
-        { 
-            
+        private void Close(object sender, MouseEventArgs e)
+        {
+            this.Visible = false;
         }
-
-
     }
 }
  

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inventory));
             this.invClassComboBox = new System.Windows.Forms.ComboBox();
             this.invHeadPanel = new System.Windows.Forms.Panel();
             this.invGlovesPanel = new System.Windows.Forms.Panel();
@@ -72,7 +73,14 @@
             this.pantsPanel = new System.Windows.Forms.Panel();
             this.shoulderPanel = new System.Windows.Forms.Panel();
             this.invLvlcomboBox = new System.Windows.Forms.ComboBox();
-            this.contextMenu1 = new Diablo_3_Dmg_Calculator.controls.ContextMenu();
+            this.attContextMenu = new System.Windows.Forms.Panel();
+            this.contextMenuAttributeComboBox = new System.Windows.Forms.ComboBox();
+            this.contextClosePanel = new System.Windows.Forms.Panel();
+            this.contextMenuAttributeValueTextBox = new System.Windows.Forms.TextBox();
+            this.contextMenuAddButtonLabel = new System.Windows.Forms.Label();
+            this.contextAddListView = new System.Windows.Forms.ListView();
+            this.Attributes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.attContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // invClassComboBox
@@ -649,21 +657,80 @@
             this.invLvlcomboBox.Text = "Level";
             this.invLvlcomboBox.TextChanged += new System.EventHandler(this.AddLevel);
             // 
-            // contextMenu1
+            // attContextMenu
             // 
-            this.contextMenu1.BackColor = System.Drawing.Color.Silver;
-            this.contextMenu1.Location = new System.Drawing.Point(551, 236);
-            this.contextMenu1.Name = "contextMenu1";
-            this.contextMenu1.Size = new System.Drawing.Size(156, 231);
-            this.contextMenu1.TabIndex = 45;
-            this.contextMenu1.Visible = false;
+            this.attContextMenu.Controls.Add(this.contextAddListView);
+            this.attContextMenu.Controls.Add(this.contextMenuAddButtonLabel);
+            this.attContextMenu.Controls.Add(this.contextMenuAttributeValueTextBox);
+            this.attContextMenu.Controls.Add(this.contextClosePanel);
+            this.attContextMenu.Controls.Add(this.contextMenuAttributeComboBox);
+            this.attContextMenu.Location = new System.Drawing.Point(551, 259);
+            this.attContextMenu.Name = "attContextMenu";
+            this.attContextMenu.Size = new System.Drawing.Size(156, 231);
+            this.attContextMenu.TabIndex = 46;
+            this.attContextMenu.Visible = false;
+            // 
+            // contextMenuAttributeComboBox
+            // 
+            this.contextMenuAttributeComboBox.FormattingEnabled = true;
+            this.contextMenuAttributeComboBox.Items.AddRange(new object[] {
+            "Strength",
+            "Dexterity",
+            "Intelligence",
+            "Vitality",
+            ".",
+            ".",
+            "."});
+            this.contextMenuAttributeComboBox.Location = new System.Drawing.Point(3, 3);
+            this.contextMenuAttributeComboBox.Name = "contextMenuAttributeComboBox";
+            this.contextMenuAttributeComboBox.Size = new System.Drawing.Size(125, 21);
+            this.contextMenuAttributeComboBox.TabIndex = 1;
+            this.contextMenuAttributeComboBox.Text = "Attribute";
+            // 
+            // contextClosePanel
+            // 
+            this.contextClosePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("contextClosePanel.BackgroundImage")));
+            this.contextClosePanel.Location = new System.Drawing.Point(133, 4);
+            this.contextClosePanel.Name = "contextClosePanel";
+            this.contextClosePanel.Size = new System.Drawing.Size(20, 20);
+            this.contextClosePanel.TabIndex = 5;
+            // 
+            // contextMenuAttributeValueTextBox
+            // 
+            this.contextMenuAttributeValueTextBox.Location = new System.Drawing.Point(3, 30);
+            this.contextMenuAttributeValueTextBox.Name = "contextMenuAttributeValueTextBox";
+            this.contextMenuAttributeValueTextBox.Size = new System.Drawing.Size(69, 20);
+            this.contextMenuAttributeValueTextBox.TabIndex = 6;
+            this.contextMenuAttributeValueTextBox.Text = "Value";
+            // 
+            // contextMenuAddButtonLabel
+            // 
+            this.contextMenuAddButtonLabel.ForeColor = System.Drawing.Color.White;
+            this.contextMenuAddButtonLabel.Image = ((System.Drawing.Image)(resources.GetObject("contextMenuAddButtonLabel.Image")));
+            this.contextMenuAddButtonLabel.Location = new System.Drawing.Point(77, 27);
+            this.contextMenuAddButtonLabel.Name = "contextMenuAddButtonLabel";
+            this.contextMenuAddButtonLabel.Size = new System.Drawing.Size(78, 29);
+            this.contextMenuAddButtonLabel.TabIndex = 7;
+            this.contextMenuAddButtonLabel.Text = "Add";
+            this.contextMenuAddButtonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // contextAddListView
+            // 
+            this.contextAddListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Attributes});
+            this.contextAddListView.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contextAddListView.Location = new System.Drawing.Point(3, 56);
+            this.contextAddListView.Name = "contextAddListView";
+            this.contextAddListView.Size = new System.Drawing.Size(150, 172);
+            this.contextAddListView.TabIndex = 8;
+            this.contextAddListView.UseCompatibleStateImageBehavior = false;
             // 
             // Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.Controls.Add(this.contextMenu1);
+            this.Controls.Add(this.attContextMenu);
             this.Controls.Add(this.pantsPanel);
             this.Controls.Add(this.bootsPanel);
             this.Controls.Add(this.mainHandPanel);
@@ -710,6 +777,8 @@
             this.Controls.Add(this.invHeadPanel);
             this.Name = "Inventory";
             this.Size = new System.Drawing.Size(710, 502);
+            this.attContextMenu.ResumeLayout(false);
+            this.attContextMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -760,7 +829,13 @@
         private System.Windows.Forms.Panel bootsPanel;
         private System.Windows.Forms.Panel pantsPanel;
         private System.Windows.Forms.Panel shoulderPanel;
-        private controls.ContextMenu contextMenu1;
         private System.Windows.Forms.ComboBox invLvlcomboBox;
+        private System.Windows.Forms.Panel attContextMenu;
+        public System.Windows.Forms.ComboBox contextMenuAttributeComboBox;
+        private System.Windows.Forms.Panel contextClosePanel;
+        public System.Windows.Forms.TextBox contextMenuAttributeValueTextBox;
+        public System.Windows.Forms.Label contextMenuAddButtonLabel;
+        public System.Windows.Forms.ListView contextAddListView;
+        private System.Windows.Forms.ColumnHeader Attributes;
     }
 }

@@ -190,7 +190,7 @@
         7eH+yBeZiPuDEPgIgx+F/wdXFIRETkODvwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="mainBarEditLabel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="mainBarSaveLabel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEsAAAAXCAYAAABDArJmAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAA9rSURBVFhHTVhZk1vHdb4DDDDAABjs+77MYAdm3/d9
@@ -262,7 +262,7 @@
         7eH+yBeZiPuDEPgIgx+F/wdXFIRETkODvwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="mainBarHelpLabel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="mainBarLoadLabel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEsAAAAXCAYAAABDArJmAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAA9rSURBVFhHTVhZk1vHdb4DDDDAABjs+77MYAdm3/d9
@@ -408,5 +408,8 @@
   </data>
   <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>153, 17</value>
   </metadata>
 </root>

@@ -29,29 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContextMenu));
-            this.contextMenuAttributeComboBox = new System.Windows.Forms.ComboBox();
             this.contextMenuAttributeValueTextBox = new System.Windows.Forms.TextBox();
             this.contextMenuAddButtonLabel = new System.Windows.Forms.Label();
             this.contextAddListView = new System.Windows.Forms.ListView();
             this.Attributes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.contextClosePanel = new System.Windows.Forms.Panel();
+            this.contextMenuAttributeComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // contextMenuAttributeComboBox
-            // 
-            this.contextMenuAttributeComboBox.FormattingEnabled = true;
-            this.contextMenuAttributeComboBox.Items.AddRange(new object[] {
-            "Strength",
-            "Dexterity",
-            "Intelligence",
-            "Vitality",
-            ".",
-            ".",
-            "."});
-            this.contextMenuAttributeComboBox.Location = new System.Drawing.Point(3, 3);
-            this.contextMenuAttributeComboBox.Name = "contextMenuAttributeComboBox";
-            this.contextMenuAttributeComboBox.Size = new System.Drawing.Size(150, 21);
-            this.contextMenuAttributeComboBox.TabIndex = 0;
-            this.contextMenuAttributeComboBox.Text = "Attribute";
             // 
             // contextMenuAttributeValueTextBox
             // 
@@ -71,6 +55,7 @@
             this.contextMenuAddButtonLabel.TabIndex = 2;
             this.contextMenuAddButtonLabel.Text = "Add";
             this.contextMenuAddButtonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.contextMenuAddButtonLabel.Click += new System.EventHandler(this.Readdata);
             // 
             // contextAddListView
             // 
@@ -83,11 +68,38 @@
             this.contextAddListView.TabIndex = 3;
             this.contextAddListView.UseCompatibleStateImageBehavior = false;
             // 
+            // contextClosePanel
+            // 
+            this.contextClosePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("contextClosePanel.BackgroundImage")));
+            this.contextClosePanel.Location = new System.Drawing.Point(133, 4);
+            this.contextClosePanel.Name = "contextClosePanel";
+            this.contextClosePanel.Size = new System.Drawing.Size(20, 20);
+            this.contextClosePanel.TabIndex = 4;
+            this.contextClosePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Close);
+            // 
+            // contextMenuAttributeComboBox
+            // 
+            this.contextMenuAttributeComboBox.FormattingEnabled = true;
+            this.contextMenuAttributeComboBox.Items.AddRange(new object[] {
+            "Strength",
+            "Dexterity",
+            "Intelligence",
+            "Vitality",
+            ".",
+            ".",
+            "."});
+            this.contextMenuAttributeComboBox.Location = new System.Drawing.Point(3, 3);
+            this.contextMenuAttributeComboBox.Name = "contextMenuAttributeComboBox";
+            this.contextMenuAttributeComboBox.Size = new System.Drawing.Size(125, 21);
+            this.contextMenuAttributeComboBox.TabIndex = 0;
+            this.contextMenuAttributeComboBox.Text = "Attribute";
+            // 
             // ContextMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
+            this.Controls.Add(this.contextClosePanel);
             this.Controls.Add(this.contextAddListView);
             this.Controls.Add(this.contextMenuAddButtonLabel);
             this.Controls.Add(this.contextMenuAttributeValueTextBox);
@@ -101,11 +113,12 @@
 
         #endregion
 
-        public System.Windows.Forms.ComboBox contextMenuAttributeComboBox;
         public System.Windows.Forms.TextBox contextMenuAttributeValueTextBox;
         public System.Windows.Forms.Label contextMenuAddButtonLabel;
         public System.Windows.Forms.ListView contextAddListView;
         private System.Windows.Forms.ColumnHeader Attributes;
+        private System.Windows.Forms.Panel contextClosePanel;
+        public System.Windows.Forms.ComboBox contextMenuAttributeComboBox;
 
     }
 }

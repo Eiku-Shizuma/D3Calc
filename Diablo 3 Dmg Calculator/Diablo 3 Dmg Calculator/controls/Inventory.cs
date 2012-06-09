@@ -22,26 +22,37 @@ namespace Diablo_3_Dmg_Calculator
             InitializeComponent();
         }
 
+        /// <summary>
+        /// COntrols Visibility and position of the context Menu to add attributes to items
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ContextMenuControl(object sender, MouseEventArgs e) 
         {
             Panel panel = (Panel)sender;
-            System.Drawing.Point i = panel.Location;
 
+            //Sets ContextMenu to a point next to the corresponding item panel
+            System.Drawing.Point i = panel.Location;
             i.X += panel.Size.Width;
 
-            this.contextMenu1.Visible = false;
-            if (i.Y > 271) { i.Y = 271; }
-            this.contextMenu1.Location = i;
-            this.contextMenu1.Visible = true;
-        }
-
-        private void AddName() 
-        {
-            form.Character.Name = Convert.ToString(this.inventoryCharNameTextBox);
+            // if the contextmenue is visible and on the same location it should be hidden
+            // else it should be hidden repositioned and shown again
+            if (this.attContextMenu.Visible == true && this.attContextMenu.Location == i)
+            {
+                this.attContextMenu.Visible = false;
+            }
+            else
+            {
+                this.attContextMenu.Visible = false;
+                if (i.Y > 271) { i.Y = 271; }
+                this.attContextMenu.Location = i;
+                this.attContextMenu.Visible = true;
+            }
         }
 
         private void AddLevel(object sender, EventArgs e)
         {
+            form.Character.Name = this.inventoryCharNameTextBox.Text;
             form.Character.Character = this.invClassComboBox.SelectedIndex + 1;
             form.Character.Lvl = this.invLvlcomboBox.SelectedIndex;
 
@@ -81,6 +92,11 @@ namespace Diablo_3_Dmg_Calculator
                 }
             }
             return stat;
+        }
+
+        private void CloseContextMenue()
+        {
+
         }
     }
 }
