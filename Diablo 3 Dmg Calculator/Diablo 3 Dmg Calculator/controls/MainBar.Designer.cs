@@ -33,6 +33,7 @@
             this.mainBarEditLabel = new System.Windows.Forms.Label();
             this.mainBarHelpLabel = new System.Windows.Forms.Label();
             this.mainBarCreditsLabel = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // mainBarFileLabel
@@ -85,13 +86,13 @@
             this.mainBarCreditsLabel.Size = new System.Drawing.Size(75, 23);
             this.mainBarCreditsLabel.TabIndex = 3;
             this.mainBarCreditsLabel.Text = "Credits";
-            this.mainBarCreditsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.mainBarCreditsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;           
             // 
             // MainBar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.Silver;
             this.Controls.Add(this.mainBarCreditsLabel);
             this.Controls.Add(this.mainBarHelpLabel);
             this.Controls.Add(this.mainBarEditLabel);
@@ -108,5 +109,6 @@
         private System.Windows.Forms.Label mainBarEditLabel;
         private System.Windows.Forms.Label mainBarHelpLabel;
         private System.Windows.Forms.Label mainBarCreditsLabel;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

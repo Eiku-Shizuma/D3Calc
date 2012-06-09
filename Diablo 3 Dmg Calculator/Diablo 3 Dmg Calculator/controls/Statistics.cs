@@ -11,9 +11,19 @@ namespace Diablo_3_Dmg_Calculator
 {
     public partial class Statistics : UserControl
     {
-        public Statistics()
+        public MainForm form;
+
+        public Statistics(MainForm main)
         {
             InitializeComponent();
+        }
+
+        public void Stats()         
+        {
+            this.statMainStrLabel.Text = Convert.ToString(form.Character.Str);
+            this.statMainDexLabel.Text = Convert.ToString(form.Character.Dex);
+            this.statMainIntLabel.Text = Convert.ToString(form.Character.Inte);
+            this.StatMainVitLabel.Text = Convert.ToString(form.Character.Vit);        
         }
     }
 }

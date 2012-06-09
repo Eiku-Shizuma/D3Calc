@@ -29,8 +29,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainBar1 = new Diablo_3_Dmg_Calculator.MainBar();
-            this.statistics1 = new Diablo_3_Dmg_Calculator.Statistics();
+            this.mainBar1 = new Diablo_3_Dmg_Calculator.MainBar(this);
+            this.statistics1 = new Diablo_3_Dmg_Calculator.Statistics(this);
             this.inventory1 = new Diablo_3_Dmg_Calculator.Inventory(this);
             this.SuspendLayout();
             Character = new Models.Charactermodel();

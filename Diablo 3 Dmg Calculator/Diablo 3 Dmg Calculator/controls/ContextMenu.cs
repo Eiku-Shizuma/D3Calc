@@ -23,11 +23,18 @@ namespace Diablo_3_Dmg_Calculator.controls
             string attribute;
             double value;
             System.Drawing.Point loc;
+
             attribute = this.contextMenuAttributeComboBox.Text;
             value = Convert.ToDouble(this.contextMenuAttributeValueTextBox.Text);
             loc = Location;
-            Charactermodel Character = new Charactermodel();
         }
+
+        public void test() 
+        { 
+            
+        }
+
+
     }
 }
  

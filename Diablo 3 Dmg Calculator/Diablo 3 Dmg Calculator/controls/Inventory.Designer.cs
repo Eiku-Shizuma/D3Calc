@@ -71,8 +71,8 @@
             this.bootsPanel = new System.Windows.Forms.Panel();
             this.pantsPanel = new System.Windows.Forms.Panel();
             this.shoulderPanel = new System.Windows.Forms.Panel();
-            this.contextMenu1 = new Diablo_3_Dmg_Calculator.controls.ContextMenu();
             this.invLvlcomboBox = new System.Windows.Forms.ComboBox();
+            this.contextMenu1 = new Diablo_3_Dmg_Calculator.controls.ContextMenu();
             this.SuspendLayout();
             // 
             // invClassComboBox
@@ -90,6 +90,8 @@
             this.invClassComboBox.Size = new System.Drawing.Size(115, 23);
             this.invClassComboBox.TabIndex = 0;
             this.invClassComboBox.Text = "Class";
+            this.invClassComboBox.SelectedValueChanged += new System.EventHandler(this.AddClass);
+            this.invClassComboBox.TextChanged += new System.EventHandler(this.AddClass);
             // 
             // invHeadPanel
             // 
@@ -575,15 +577,6 @@
             this.shoulderPanel.TabIndex = 33;
             this.shoulderPanel.Visible = false;
             // 
-            // contextMenu1
-            // 
-            this.contextMenu1.BackColor = System.Drawing.Color.Silver;
-            this.contextMenu1.Location = new System.Drawing.Point(551, 236);
-            this.contextMenu1.Name = "contextMenu1";
-            this.contextMenu1.Size = new System.Drawing.Size(156, 231);
-            this.contextMenu1.TabIndex = 45;
-            this.contextMenu1.Visible = false;
-            // 
             // invLvlcomboBox
             // 
             this.invLvlcomboBox.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -655,6 +648,15 @@
             this.invLvlcomboBox.Size = new System.Drawing.Size(55, 23);
             this.invLvlcomboBox.TabIndex = 1;
             this.invLvlcomboBox.Text = "Level";
+            // 
+            // contextMenu1
+            // 
+            this.contextMenu1.BackColor = System.Drawing.Color.Silver;
+            this.contextMenu1.Location = new System.Drawing.Point(551, 236);
+            this.contextMenu1.Name = "contextMenu1";
+            this.contextMenu1.Size = new System.Drawing.Size(156, 231);
+            this.contextMenu1.TabIndex = 45;
+            this.contextMenu1.Visible = false;
             // 
             // Inventory
             // 
