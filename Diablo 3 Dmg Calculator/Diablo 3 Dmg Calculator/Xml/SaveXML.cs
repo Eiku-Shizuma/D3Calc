@@ -15,7 +15,7 @@ namespace Diablo_3_Dmg_Calculator.Xml
         private static Charactermodel model;
         private static bool result;
 
-        public static void SaveChcaracter(string par_path, Charactermodel par_model){
+        public static void SaveCharacter(string par_path, Charactermodel par_model){
             path = par_path;
             model = par_model;
 
