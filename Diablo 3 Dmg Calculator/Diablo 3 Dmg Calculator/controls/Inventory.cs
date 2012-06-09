@@ -19,15 +19,6 @@ namespace Diablo_3_Dmg_Calculator
         public Inventory(MainForm main)
         {
             form = main;
-
-            foreach (var item in form.Controls)
-            {
-                if (item.GetType() == typeof(Statistics))
-                {
-                    stat = (Statistics)item;
-                }
-            }
-
             InitializeComponent();
         }
 
@@ -51,42 +42,44 @@ namespace Diablo_3_Dmg_Calculator
 
         private void AddClass(object sender, EventArgs e)
         {
+            stat = RefreshStats();
             stat.Stats();
-            form.Character.Character = this.invClassComboBox.SelectedIndex;
-            if (form.Character.Character < 2) 
+            form.Character.Lvl = Convert.ToInt32(this.invLvlcomboBox);
+            form.Character.Vit = 9;
+            if (form.Character.Character < 1)
             {
                 form.Character.Str = 10;
                 form.Character.Dex = 8;
                 form.Character.Inte = 8;
             }
-            else if (form.Character.Character > 3)
+            else if (form.Character.Character > 2)
             {
                 form.Character.Str = 8;
                 form.Character.Dex = 8;
                 form.Character.Inte = 10;
             }
-            else 
+            else
             {
                 form.Character.Str = 8;
                 form.Character.Dex = 10;
                 form.Character.Inte = 8;
             }
-            form.Character.Vit = 9;
 
         }
 
-        private void AddLevel()
+        private void AddLevel(object sender, EventArgs e)
         {
+            stat = RefreshStats();
             stat.Stats();
             form.Character.Lvl = Convert.ToInt32(this.invLvlcomboBox);
             form.Character.Vit += form.Character.Lvl * 2;
-            if (form.Character.Character < 2)
+            if (form.Character.Character < 1)
             {
                 form.Character.Str += form.Character.Lvl * 3;
                 form.Character.Dex += form.Character.Lvl;
                 form.Character.Inte += form.Character.Lvl;
             }
-            else if (form.Character.Character > 3)
+            else if (form.Character.Character > 2)
             {
                 form.Character.Str += form.Character.Lvl;
                 form.Character.Dex += form.Character.Lvl;
@@ -100,9 +93,16 @@ namespace Diablo_3_Dmg_Calculator
             }
         }
 
-        private void AddClass()
+        private Statistics RefreshStats()
         {
-
+            foreach (var item in form.Controls)
+            {
+                if (item.GetType() == typeof(Statistics))
+                {
+                    stat = (Statistics)item;
+                }
+            }
+            return stat;
         }
     }
 }

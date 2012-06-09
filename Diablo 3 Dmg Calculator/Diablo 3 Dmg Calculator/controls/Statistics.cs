@@ -15,6 +15,7 @@ namespace Diablo_3_Dmg_Calculator
 
         public Statistics(MainForm main)
         {
+            form = main;
             InitializeComponent();
         }
 
