@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <characterinfo>
+    <name></name>
+    <class></class>
+    <level></level>
+    <strenght></strenght>
+    <dexterity></dexterity>
+    <intelligence></intelligence>
+    <vitality></vitality>
+    <skill1></skill1>
+    <skill2></skill2>
+    <skill3></skill3>
+  </characterinfo>
+  <charactergear>
+    <helm>
+      
+    </helm>
+  </charactergear>
+</root>
