@@ -90,7 +90,7 @@
             this.invClassComboBox.Size = new System.Drawing.Size(115, 23);
             this.invClassComboBox.TabIndex = 0;
             this.invClassComboBox.Text = "Class";
-            this.invClassComboBox.SelectedIndexChanged += new System.EventHandler(this.AddClass);
+            this.invClassComboBox.SelectedIndexChanged += new System.EventHandler(this.AddLevel);
             // 
             // invHeadPanel
             // 
