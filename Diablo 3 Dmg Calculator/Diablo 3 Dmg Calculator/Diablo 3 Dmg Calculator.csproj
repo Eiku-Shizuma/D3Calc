@@ -82,6 +82,7 @@
     <Compile Include="controls\Statistics.Designer.cs">
       <DependentUpon>Statistics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Xml\SaveXML.cs" />
     <EmbeddedResource Include="controls\ContextMenu.resx">
       <DependentUpon>ContextMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,8 +117,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Xml\" />
+    <Content Include="Xml\CharacterXmlTemplate.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
