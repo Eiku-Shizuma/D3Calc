@@ -46,7 +46,7 @@ namespace Diablo_3_Dmg_Calculator.Xml
 
             foreach (var stats in model.GetType().GetProperties())
             {
-                if (Object.ReferenceEquals(stats.GetType(), model.Helm.GetType()) != true)
+                if (stats.GetType() == typeof(itemmodel))
                 {
                     child = doc.CreateElement(Check(() => stats));
                     child.Value = stats.GetType().GetField(Check(() => stats)).GetValue(stats).ToString();

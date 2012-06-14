@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Diablo_3_Dmg_Calculator.Models;
+using Diablo_3_Dmg_Calculator.controls;
 
 
 namespace Diablo_3_Dmg_Calculator
@@ -29,7 +30,7 @@ namespace Diablo_3_Dmg_Calculator
         /// <param name="e"></param>
         private void ContextMenuControl(object sender, MouseEventArgs e) 
         {
-            Panel panel = (Panel)sender;
+            Panel panel = sender as Panel;
 
             //Sets ContextMenu to a point next to the corresponding item panel
             System.Drawing.Point i = panel.Location;
@@ -47,26 +48,28 @@ namespace Diablo_3_Dmg_Calculator
                 if (i.Y > 271) { i.Y = 271; }
                 this.attContextMenu.Location = i;
                 this.attContextMenu.Visible = true;
-            }
+                this.attContextMenu.From = panel.Name;
 
-            
-
-            
+            }                    
         }
 
         private void AddAttribute(object sender, EventArgs e) 
         {
-            Panel panel = (Panel)sender;
+            Label label = (Label)sender;
 
-            switch (panel.Name)
+            switch (this.attContextMenu.From)
             {
                 case "invHeadPanel":
+                    this.contextAddListView.Items.Add("Head");                    
                     break;
                 case "invNeckPanel":
+                    MessageBox.Show("Neck");
                     break;
                 case "invShoulderPanel":
+                    MessageBox.Show("Shoulder");
                     break;
                 case "invBracersPanel":
+                    MessageBox.Show("Bracers");
                     break;
                 case "invGlovesPanel":
                     break;
@@ -85,6 +88,9 @@ namespace Diablo_3_Dmg_Calculator
                 case "invOffPanel":
                     break;
                 case "invMainPanel":
+                    break;
+                default:
+                    this.contextAddListView.Items.Add("Head");
                     break;
             }
         }

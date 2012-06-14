@@ -27,8 +27,8 @@ namespace Diablo_3_Dmg_Calculator
 
         private void Save(object sender, EventArgs e) 
         {
-            MessageBox.Show("Not yet Implemented!\nStill buggy on Manuels part");
-            /*
+            //MessageBox.Show("Not yet Implemented!\nStill buggy on Manuels part");
+            
             saveFileDialog1.Filter = "D3Cals Save File|*.sav";
             saveFileDialog1.Title = "Save a D3Calc File";
             saveFileDialog1.ShowDialog();
@@ -39,11 +39,11 @@ namespace Diablo_3_Dmg_Calculator
                 {
                     Xml.SaveXML.SaveCharacter(saveFileDialog1.FileName, form.Character);
                 }
-                catch (Exception)
+                catch (Exception exception)
                 { 
-                    MessageBox.Show("Fehler!");
+                    MessageBox.Show("Fehler!:"+exception.ToString());
                 }
-            }*/
+            }
         }
 
         private void Open(object sender, EventArgs e) 

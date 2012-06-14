@@ -73,12 +73,12 @@
             this.pantsPanel = new System.Windows.Forms.Panel();
             this.shoulderPanel = new System.Windows.Forms.Panel();
             this.invLvlcomboBox = new System.Windows.Forms.ComboBox();
-            this.attContextMenu = new System.Windows.Forms.Panel();
-            this.contextMenuAttributeComboBox = new System.Windows.Forms.ComboBox();
-            this.contextMenuAttributeValueTextBox = new System.Windows.Forms.TextBox();
-            this.contextMenuAddButtonLabel = new System.Windows.Forms.Label();
+            this.attContextMenu = new Diablo_3_Dmg_Calculator.controls.AttContextMenu();
             this.contextAddListView = new System.Windows.Forms.ListView();
             this.Attributes = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.contextMenuAddButtonLabel = new System.Windows.Forms.Label();
+            this.contextMenuAttributeValueTextBox = new System.Windows.Forms.TextBox();
+            this.contextMenuAttributeComboBox = new System.Windows.Forms.ComboBox();
             this.attContextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -668,6 +668,37 @@
             this.attContextMenu.TabIndex = 46;
             this.attContextMenu.Visible = false;
             // 
+            // contextAddListView
+            // 
+            this.contextAddListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Attributes});
+            this.contextAddListView.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contextAddListView.Location = new System.Drawing.Point(3, 56);
+            this.contextAddListView.Name = "contextAddListView";
+            this.contextAddListView.Size = new System.Drawing.Size(150, 172);
+            this.contextAddListView.TabIndex = 8;
+            this.contextAddListView.UseCompatibleStateImageBehavior = false;
+            // 
+            // contextMenuAddButtonLabel
+            // 
+            this.contextMenuAddButtonLabel.ForeColor = System.Drawing.Color.White;
+            this.contextMenuAddButtonLabel.Image = ((System.Drawing.Image)(resources.GetObject("contextMenuAddButtonLabel.Image")));
+            this.contextMenuAddButtonLabel.Location = new System.Drawing.Point(77, 27);
+            this.contextMenuAddButtonLabel.Name = "contextMenuAddButtonLabel";
+            this.contextMenuAddButtonLabel.Size = new System.Drawing.Size(78, 29);
+            this.contextMenuAddButtonLabel.TabIndex = 7;
+            this.contextMenuAddButtonLabel.Text = "Add";
+            this.contextMenuAddButtonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.contextMenuAddButtonLabel.Click += new System.EventHandler(this.AddAttribute);
+            // 
+            // contextMenuAttributeValueTextBox
+            // 
+            this.contextMenuAttributeValueTextBox.Location = new System.Drawing.Point(3, 30);
+            this.contextMenuAttributeValueTextBox.Name = "contextMenuAttributeValueTextBox";
+            this.contextMenuAttributeValueTextBox.Size = new System.Drawing.Size(69, 20);
+            this.contextMenuAttributeValueTextBox.TabIndex = 6;
+            this.contextMenuAttributeValueTextBox.Text = "Value";
+            // 
             // contextMenuAttributeComboBox
             // 
             this.contextMenuAttributeComboBox.FormattingEnabled = true;
@@ -717,36 +748,6 @@
             this.contextMenuAttributeComboBox.Sorted = true;
             this.contextMenuAttributeComboBox.TabIndex = 1;
             this.contextMenuAttributeComboBox.Text = "Attribute";
-            // 
-            // contextMenuAttributeValueTextBox
-            // 
-            this.contextMenuAttributeValueTextBox.Location = new System.Drawing.Point(3, 30);
-            this.contextMenuAttributeValueTextBox.Name = "contextMenuAttributeValueTextBox";
-            this.contextMenuAttributeValueTextBox.Size = new System.Drawing.Size(69, 20);
-            this.contextMenuAttributeValueTextBox.TabIndex = 6;
-            this.contextMenuAttributeValueTextBox.Text = "Value";
-            // 
-            // contextMenuAddButtonLabel
-            // 
-            this.contextMenuAddButtonLabel.ForeColor = System.Drawing.Color.White;
-            this.contextMenuAddButtonLabel.Image = ((System.Drawing.Image)(resources.GetObject("contextMenuAddButtonLabel.Image")));
-            this.contextMenuAddButtonLabel.Location = new System.Drawing.Point(77, 27);
-            this.contextMenuAddButtonLabel.Name = "contextMenuAddButtonLabel";
-            this.contextMenuAddButtonLabel.Size = new System.Drawing.Size(78, 29);
-            this.contextMenuAddButtonLabel.TabIndex = 7;
-            this.contextMenuAddButtonLabel.Text = "Add";
-            this.contextMenuAddButtonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // contextAddListView
-            // 
-            this.contextAddListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Attributes});
-            this.contextAddListView.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contextAddListView.Location = new System.Drawing.Point(3, 56);
-            this.contextAddListView.Name = "contextAddListView";
-            this.contextAddListView.Size = new System.Drawing.Size(150, 172);
-            this.contextAddListView.TabIndex = 8;
-            this.contextAddListView.UseCompatibleStateImageBehavior = false;
             // 
             // Inventory
             // 
@@ -853,7 +854,7 @@
         private System.Windows.Forms.Panel pantsPanel;
         private System.Windows.Forms.Panel shoulderPanel;
         private System.Windows.Forms.ComboBox invLvlcomboBox;
-        private System.Windows.Forms.Panel attContextMenu;
+        private Diablo_3_Dmg_Calculator.controls.AttContextMenu attContextMenu;
         public System.Windows.Forms.ComboBox contextMenuAttributeComboBox;
         public System.Windows.Forms.TextBox contextMenuAttributeValueTextBox;
         public System.Windows.Forms.Label contextMenuAddButtonLabel;
